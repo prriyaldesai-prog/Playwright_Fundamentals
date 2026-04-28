@@ -9,8 +9,10 @@ test('Login with invalid credentials using getByRole', async ({ page }) => {
     await page.getByRole('textbox', { name: 'password' }).fill("pass123");
     await page.waitForTimeout(2000);
 
-    let Btn = page.getByRole('button', { name: 'submit' });
-    await Btn.click();
-    await page.waitForTimeout(2000);
+    //await page.getByRole('button', { name: 'Sign in', exact: true }).click();
+    await page.locator("#js-login-btn").click();
+    //await page.locator("xpath=(//span[text()='Sign in'])[1]").click();
+
+    await page.waitForTimeout(3000);
 });
 
