@@ -11,9 +11,13 @@ test('Verify incorrect domain Error message', async ({ page }) => {
 
     //let errorMsg = page.getByRole('alert', { name: "gmail.com doesn't look like a business domain. Please use your business email." });
 
+    await page.getByRole("checkbox", { name: "I agree to VWO's Privacy Policy & Terms" }).check();
+    await page.waitForTimeout(2000);
+
+    await page.getByRole("button", { name: "Create a Free Trial Account" }).click();
+    await page.waitForTimeout(2000);
+
     let errorMsg = page.getByText("gmail.com doesn't look like a business domain. Please use your business email.")
     await expect(errorMsg).toHaveText("gmail.com doesn't look like a business domain. Please use your business email.");
-
-
 
 });
