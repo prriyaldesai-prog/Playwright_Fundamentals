@@ -89,3 +89,10 @@ Open the following file in your browser:
 ---
 
 Built with ❤️ by **The Testing Academy**
+
+---
+
+### 🎥 Execution Video Preview
+
+![Execution Video Screenshot](./Screenshot%202026-05-04%20120725.png)
+
