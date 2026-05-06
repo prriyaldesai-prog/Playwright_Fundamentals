@@ -1,0 +1,69 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Projects\Task_5_QA_ProfileFormPractice\Task_QAProfileForm.spec.ts >> Test set of different components - group the test cases togather >> QA Profile Test
+- Location: tests\Projects\Task_5_QA_ProfileFormPractice\Task_QAProfileForm.spec.ts:4:9
+
+# Error details
+
+```
+Error: locator.selectText: Test ended.
+Call log:
+  - attempting selectText action
+    2 × waiting for element to be visible
+      - element is not visible
+    - retrying selectText action
+    - waiting 20ms
+    2 × waiting for element to be visible
+      - element is not visible
+    - retrying selectText action
+      - waiting 100ms
+    13 × waiting for element to be visible
+       - element is not visible
+     - retrying selectText action
+       - waiting 500ms
+
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect } from '@playwright/test';
+  2  | 
+  3  | test.describe("Test set of different components - group the test cases togather", () => {
+  4  |     test('QA Profile Test', async ({ page }) => {
+  5  |         page.goto("https://app.thetestingacademy.com/playwright/tables/practice");
+  6  | 
+  7  |         await page.getByRole('textbox', { name: 'First name' }).fill("Priyal");
+  8  |         await page.getByTestId('last-name').fill('Desai');
+  9  |         await page.getByRole('radio', { name: 'Female' }).check();
+  10 |         await page.waitForTimeout(3000);
+  11 |         await page.getByRole('combobox', { name: 'Years of experience' }).click();
+  12 |         await page.waitForTimeout(3000);
+  13 |         let list = await page.locator('div.field > select > option');
+  14 |         let listCount = await list.count();
+  15 |         await page.waitForTimeout(2000);
+  16 |         console.log(listCount);
+> 17 |         let selectedValue = list.last().selectText();
+     |                                         ^ Error: locator.selectText: Test ended.
+  18 | 
+  19 |         await page.waitForTimeout(3000);
+  20 | 
+  21 |         await page.getByRole('radio', { name: 'Automation Tester' }).check();
+  22 |         await page.getByRole('checkbox', { name: 'UFT' }).check();
+  23 |         await page.getByRole('checkbox', { name: 'Selenium Webdriver' }).check();
+  24 |         await page.getByRole('checkbox', { name: 'Asia' }).check();
+  25 |         await page.getByRole('checkbox', { name: 'South America' }).check();
+  26 |         await page.getByRole('checkbox', { name: 'North America' }).check();
+  27 |         await page.waitForTimeout(3000);
+  28 | 
+  29 |         await page.getByRole('tab', { name: 'Switch Commands' }).click();
+  30 | 
+  31 |     });
+  32 | });
+```

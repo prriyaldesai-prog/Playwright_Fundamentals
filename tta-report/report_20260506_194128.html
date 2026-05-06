@@ -789,11 +789,11 @@
                 <div class="stat-label">Total Tests</div>
             </div>
             <div class="stat-card passed">
-                <div class="stat-value">1</div>
+                <div class="stat-value">0</div>
                 <div class="stat-label">Passed</div>
             </div>
             <div class="stat-card failed">
-                <div class="stat-value">0</div>
+                <div class="stat-value">1</div>
                 <div class="stat-label">Failed</div>
             </div>
             <div class="stat-card skipped">
@@ -801,11 +801,11 @@
                 <div class="stat-label">Skipped</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">100.0%</div>
+                <div class="stat-value">0.0%</div>
                 <div class="stat-label">Pass Rate</div>
             </div>
             <div class="stat-card">
-                <div class="stat-value">31s</div>
+                <div class="stat-value">20s</div>
                 <div class="stat-label">Duration</div>
             </div>
         </div>
@@ -830,11 +830,11 @@
             </div>
             <div class="meta-item">
                 <span class="meta-label">Run ID</span>
-                <span class="meta-value" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">20260503_134816</span>
+                <span class="meta-value" style="font-family: 'JetBrains Mono', monospace; font-size: 12px;">20260506_194128</span>
             </div>
             <div class="meta-item">
                 <span class="meta-label">Started</span>
-                <span class="meta-value">May 03, 2026, 13:48:16</span>
+                <span class="meta-value">May 06, 2026, 19:41:28</span>
             </div>
         </div>
         
@@ -877,20 +877,20 @@
                 </tr>
             </thead>
             <tbody>
-                <tr class="test-row passed" data-test-id="test-ba76d02372e2a1fb23f3-d6052a514d6fde0ca5cc" data-tags="">
+                <tr class="test-row failed" data-test-id="test-4d88e2f3c6787175f64b-28967cb7feeef0452e6f" data-tags="">
                     <td class="col-sno">1</td>
                     <td class="col-suite">chromium</td>
                     <td class="col-testname">
-                        <span class="test-name-link" onclick="toggleTestDetail('test-ba76d02372e2a1fb23f3-d6052a514d6fde0ca5cc')">Signup,Debit &amp; Verify account balance</span>
+                        <span class="test-name-link" onclick="toggleTestDetail('test-4d88e2f3c6787175f64b-28967cb7feeef0452e6f')">QA Profile Test</span>
                     </td>
                     <td class="col-author">TTA-QA</td>
                     <td class="col-group">chromium</td>
                     <td class="col-tags"></td>
-                    <td class="col-file">C:\Users\123\OneDrive\Priyal\Playwright Fundamentals\tests\Projects\Task_4_TTA_Bank\Task_TTA_Bank.spec.ts:3</td>
-                    <td class="col-starttime">May 03, 2026, 13:48:16</td>
-                    <td class="col-endtime">May 03, 2026, 13:48:41</td>
-                    <td class="col-duration">25s</td>
-                    <td class="col-status"><span class="status-badge passed">Passed</span></td>
+                    <td class="col-file">C:\Users\123\OneDrive\Priyal\Playwright Fundamentals\tests\Projects\Task_5_QA_ProfileFormPractice\Task_QAProfileForm.spec.ts:4</td>
+                    <td class="col-starttime">May 06, 2026, 19:41:28</td>
+                    <td class="col-endtime">May 06, 2026, 19:41:45</td>
+                    <td class="col-duration">17s</td>
+                    <td class="col-status"><span class="status-badge failed">Failed</span></td>
                     <td class="col-screenshot">
                         <a href="screenshots/screenshot_1_1.png" target="_blank" class="screenshot-link">📷 View</a>
                     </td>
@@ -901,10 +901,52 @@
                         N/A
                     </td>
                 </tr>
-                <tr class="test-detail-row" id="detail-row-test-ba76d02372e2a1fb23f3-d6052a514d6fde0ca5cc" style="display: none;">
+                <tr class="test-detail-row" id="detail-row-test-4d88e2f3c6787175f64b-28967cb7feeef0452e6f" style="display: none;">
                     <td colspan="14">
-                        <div class="test-detail" id="detail-test-ba76d02372e2a1fb23f3-d6052a514d6fde0ca5cc">
+                        <div class="test-detail" id="detail-test-4d88e2f3c6787175f64b-28967cb7feeef0452e6f">
                             <div class="detail-panel">
+            <div class="detail-section error-section">
+                <div class="section-header" onclick="toggleSection(this)">
+                    <span class="section-arrow">▼</span> Errors
+                </div>
+                <div class="section-content">
+                    <div class="error-box">
+                        <pre class="error-message">Error: locator.selectText: Test ended.
+Call log:
+[2m  - attempting selectText action[22m
+[2m    2 × waiting for element to be visible[22m
+[2m      - element is not visible[22m
+[2m    - retrying selectText action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible[22m
+[2m      - element is not visible[22m
+[2m    - retrying selectText action[22m
+[2m      - waiting 100ms[22m
+[2m    13 × waiting for element to be visible[22m
+[2m       - element is not visible[22m
+[2m     - retrying selectText action[22m
+[2m       - waiting 500ms[22m
+</pre>
+                        <details class="stack-details"><summary>Call Stack</summary><pre class="stack-trace-content">Error: locator.selectText: Test ended.
+Call log:
+[2m  - attempting selectText action[22m
+[2m    2 × waiting for element to be visible[22m
+[2m      - element is not visible[22m
+[2m    - retrying selectText action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible[22m
+[2m      - element is not visible[22m
+[2m    - retrying selectText action[22m
+[2m      - waiting 100ms[22m
+[2m    13 × waiting for element to be visible[22m
+[2m       - element is not visible[22m
+[2m     - retrying selectText action[22m
+[2m       - waiting 500ms[22m
+
+    at C:\Users\123\OneDrive\Priyal\Playwright Fundamentals\tests\Projects\Task_5_QA_ProfileFormPractice\Task_QAProfileForm.spec.ts:17:41</pre></details>
+                    </div>
+                </div>
+            </div>
             <div class="detail-section screenshots-section">
                 <div class="section-header" onclick="toggleSection(this)">
                     <span class="section-arrow">▼</span> Screenshots
