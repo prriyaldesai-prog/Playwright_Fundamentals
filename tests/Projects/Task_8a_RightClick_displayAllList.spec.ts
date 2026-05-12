@@ -10,6 +10,7 @@ test.describe('RightClick_DisplayList', () => {
         await page.locator('span.context-menu-one').first().click({ button: 'right' });
 
         await page.waitForTimeout(3000);
+        await page.getByText('Edit', { exact: true }).click();
 
         //right click button list dislpay - take string[]
         console.log("list1 :");
@@ -18,12 +19,16 @@ test.describe('RightClick_DisplayList', () => {
     });
     test('Right Click-section2', async ({ page }) => {
         await page.getByTestId('ctx-target-2').click({ button: 'right' });
+        await page.getByText('Edit', { exact: true }).click();
+
         console.log("list2 :");
         const list2: string[] = await page.locator('.context-menu-list .context-menu-item').allInnerTexts();
         console.log(list2);
     });
     test('Right Click-section3', async ({ page }) => {
         await page.getByTestId('ctx-target-3').click({ button: 'right' });
+        await page.getByText('Edit', { exact: true }).click();
+
         console.log("list3 :");
         const list3: string[] = await page.locator('ul.context-menu-list span').allInnerTexts();
         console.log(list3);
