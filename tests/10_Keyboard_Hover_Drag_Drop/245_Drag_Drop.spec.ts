@@ -24,4 +24,23 @@ test('Drag and Drop', async ({ page }) => {
 
 
 
+
+
+
+
+    //practice
+    // const columnA = await page.locator('#column-a');
+    // const columnB = await page.locator('#column-b');
+
+    // await expect(columnA).toHaveText(`A`);
+    // await expect(columnB).toHaveText(`B`);
+
+    // await columnA.dragTo(columnB);
+
+    // await expect(columnA).toHaveText(`B`);
+    // await expect(columnB).toHaveText(`A`);
+
+    // await page.waitForTimeout(5000);
+
+
 });

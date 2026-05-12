@@ -25,7 +25,7 @@ test('Drag and Drop', async ({ page }) => {
     await page.mouse.move(tBox.x + tBox.width / 2, tBox.y + tBox.height / 2, { steps: 10 });
     await page.mouse.up();
 
-
+    //no body uses this now adays the move function, everyone uses dragto
 
 
 
