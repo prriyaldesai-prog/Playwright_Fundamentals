@@ -8,6 +8,11 @@ test('Advance SVG Project', async ({ page }) => {
     const states = await page.locator('pre > code > span').allInnerTexts();
     for (const state of states) {
         console.log(`State Name : ${state}`);
+        //condition to click on any 1
+        if (state === 'Mizoram') {
+            await page.getByText('Mizoram').click();
+            await page.waitForTimeout(3000);
+        }
 
     }
 
