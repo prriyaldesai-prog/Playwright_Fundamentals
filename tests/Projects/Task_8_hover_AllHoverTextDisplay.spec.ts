@@ -3,19 +3,23 @@ import { test, expect } from '@playwright/test';
 test('Keybaord', async ({ page }) => {
 
     //clear cookies first
-    await page.context().clearCookies();
+    // await page.context().clearCookies();
     await page.goto('https://app.thetestingacademy.com/playwright/widgets/hover-menu');
 
-    await page.locator('[data-testid="nav-add-ons"]').hover();
-    await page.getByRole('menuitem', { name: '📶 Wi-Fi' }).click();
+    await page.getByTestId('nav-add-ons').hover();
+    await page.getByTestId('test-id-Wifi').click();
 
-    await page.waitForTimeout(3000);
+    let verifyText = await page.locator('#output').innerText();
+    await expect(verifyText).toContain('Wi-Fi');
+
+    await page.waitForTimeout(2000);
 
 
     //print all hovers text
     //use .class .......... between ' ' 
-    const allHoverText = page.locator('[data-testid="nav-add-ons"] .submenu .submenu-item');
-    console.log(await allHoverText.allInnerTexts());
+
+    // const allHoverText = page.locator('[data-testid="nav-add-ons"] .submenu .submenu-item');
+    // console.log(await allHoverText.allInnerTexts());
 
 
 
