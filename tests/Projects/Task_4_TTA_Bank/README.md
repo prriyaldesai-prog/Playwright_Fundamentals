@@ -38,6 +38,10 @@ npx playwright test tests/Projects/Task_4_TTA_Bank/Task_TTA_Bank.spec.ts
 
 <img src="./execution_video_preview.png" width="800" alt="TTA Bank Automation Preview">
 
+### 📊 Execution Report
+
+![TTA Automation Report](./report_summary.png)
+
 ---
 
 Built with ❤️ by **The Testing Academy**
