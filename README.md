@@ -16,16 +16,23 @@ A comprehensive repository for learning and practicing Playwright automation wit
 ### 3. Web Table Automation
 - **Search & Verify**: Implementation of search logic within dynamic tables with XPath and stable assertions.
 
-### 4. SVG Element Handling
+### 4. Shadow DOM Handling
+- **Open Shadow DOM**: Automated element interaction using Playwright's native shadow-piercing locators.
+- **Closed Shadow DOM**: Implemented workarounds for inaccessible shadow roots using **Keyboard navigation (Tab + Type)** and **Mouse coordinate-based clicking**.
+
+### 5. SVG Element Handling
 - **Dynamic Icons**: Interacting with SVG-based search icons and verifying product data on modern e-commerce sites like Flipkart.
 
-### 5. Keyboard & Event Handling
-- **Keyboard Shortcuts**: Automating key presses (Enter, Escape, etc.) for form submission and menu navigation.
+### 6. Keyboard & Event Handling
+- **Keyboard Shortcuts**: Automating key presses (Enter, Escape, Tab, etc.) for form submission, menu navigation, and closed Shadow DOM interaction.
 
 ## 🛠️ Tech Stack
 - **Framework**: Playwright
 - **Language**: TypeScript
-- **Reporter**: Custom TTA Reporter & Allure
+- **Reporting**: 
+  - **HTML Reporter**: Default Playwright reports.
+  - **Allure**: Detailed graphical test execution reports.
+  - **Custom TTA Reporter**: Proprietary reporter for enhanced console and screenshot visibility.
 
 ## 🧪 How to Run Tests
 
