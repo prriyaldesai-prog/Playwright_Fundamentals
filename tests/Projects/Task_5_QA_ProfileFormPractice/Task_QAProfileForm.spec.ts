@@ -23,5 +23,8 @@ test.describe("Test set of different components - group the test cases togather"
         await page.getByRole('checkbox', { name: 'North America' }).check();
         await page.getByRole('tab', { name: 'Switch Commands' }).click();
 
+        await page.locator('#upload-image').setInputFiles(['tests/Projects/Task_Upload_File/dummyfile.jpg']);
+        await page.locator('#download-file').click();
+        await page.waitForTimeout(3000);
     });
 });

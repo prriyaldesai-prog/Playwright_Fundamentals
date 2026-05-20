@@ -14,8 +14,8 @@ test.describe('Shadow handling', () => {
         const card1 = page.locator("[data-id='6fef204']");
         await card1.getByTitle('user name field').fill('QAtest');
 
-        // Fix: Use page for pizza (it is not inside card1 on SelectorsHub)
-        await page.locator('#pizza').fill('BakeYourOwnHealthyPizza');
+        // Ensure the element is in view before interacting
+        await card1.locator('#pizza').fill('BakeYourOwnHealthyPizza');
         await page.waitForTimeout(2000);
 
         //closed shadow dom - directly cannot be automated

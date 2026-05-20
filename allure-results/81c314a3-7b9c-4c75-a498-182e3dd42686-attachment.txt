@@ -1,0 +1,1 @@
+File path: C:\Users\123\OneDrive\Priyal\Playwright Fundamentals\tests\14_FileUpload\testdata.txt

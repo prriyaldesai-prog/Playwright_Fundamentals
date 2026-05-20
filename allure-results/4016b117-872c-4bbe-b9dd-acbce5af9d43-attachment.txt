@@ -1,0 +1,3 @@
+Scenario Execution started - server started
+File path: C:\Users\123\OneDrive\Priyal\Playwright Fundamentals\tests\Projects\Project_11_DataDrivenTesting\testdata1.txt
+After all - tear down

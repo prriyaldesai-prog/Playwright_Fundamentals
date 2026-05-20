@@ -1,0 +1,375 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Projects\project_10_shadowDOM.spec.ts >> Shadow handling >> locate Shadow DOM and assert visible
+- Location: tests\Projects\project_10_shadowDOM.spec.ts:11:9
+
+# Error details
+
+```
+Error: expect(locator).toHaveText(expected) failed
+
+Locator: getByText('iframe in Shadow DOM')
+Expected: "iframe in Shadow DOM"
+Error: strict mode violation: getByText('iframe in Shadow DOM') resolved to 2 elements:
+    1) <h1 class="entry-title">iframe in shadow dom</h1> aka getByText('iframe in shadow dom', { exact: true })
+    2) <h6 class="elementor-heading-title elementor-size-default">iframe in Shadow DOM</h6> aka getByRole('heading', { name: 'iframe in Shadow DOM' })
+
+Call log:
+  - Expect "toHaveText" with timeout 5000ms
+  - waiting for getByText('iframe in Shadow DOM')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - heading "Get free access to our advanced XPath & CSS course. Ends in -" [level=5] [ref=e7]:
+          - link "Get free access to our advanced XPath & CSS course. Ends in -" [ref=e8] [cursor=pointer]:
+            - /url: https://selectorshub.com/get-free-access-of-advanced-xpath-and-css-selector-paid-course/
+        - generic [ref=e10]:
+          - generic [ref=e11]: 09 Hrs
+          - generic [ref=e12]: 59 Min
+          - generic [ref=e13]: 54 Sec
+        - link "Claim It Here" [ref=e15] [cursor=pointer]:
+          - /url: https://selectorshub.com/get-free-access-of-advanced-xpath-and-css-selector-paid-course/
+          - generic [ref=e17]: Claim It Here
+      - generic [ref=e20]:
+        - link [ref=e22] [cursor=pointer]:
+          - /url: https://selectorshub.com
+        - navigation "Menu" [ref=e24]:
+          - generic "Menu Toggle" [ref=e25]:
+            - list [ref=e26]:
+              - listitem [ref=e27]:
+                - generic [ref=e28]:
+                  - generic [ref=e30]: Products
+                  - button "Open Products" [ref=e31]:
+                    - generic [ref=e32]:
+                      - img [ref=e33]
+                      - generic [ref=e35]: Open Products
+              - listitem [ref=e36]:
+                - generic [ref=e37]:
+                  - generic [ref=e39]: Pro Plans
+                  - button "Open Pro Plans" [ref=e40]:
+                    - generic [ref=e41]:
+                      - img [ref=e42]
+                      - generic [ref=e44]: Open Pro Plans
+              - listitem [ref=e45]:
+                - link "Courses" [ref=e47] [cursor=pointer]:
+                  - /url: /courses-recordings/
+                  - generic [ref=e48]: Courses
+              - listitem [ref=e49]:
+                - link "Practice Page" [ref=e51] [cursor=pointer]:
+                  - /url: /xpath-practice-page/
+                  - generic [ref=e52]: Practice Page
+              - listitem [ref=e53]:
+                - generic [ref=e54]:
+                  - generic [ref=e56]: Resources
+                  - button "Open Resources" [ref=e57]:
+                    - generic [ref=e58]:
+                      - img [ref=e59]
+                      - generic [ref=e61]: Open Resources
+              - listitem [ref=e62]:
+                - link "Help?" [ref=e64] [cursor=pointer]:
+                  - /url: /contact-us/
+                  - generic [ref=e65]: Help?
+        - link [ref=e68] [cursor=pointer]:
+          - /url: "#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjIyNjU3IiwidG9nZ2xlIjpmYWxzZX0%3D"
+          - img [ref=e69]
+  - main [ref=e71]:
+    - generic [ref=e76]:
+      - heading "iframe in Shadow DOM" [level=6] [ref=e78]
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - link "Learning Hub" [ref=e82] [cursor=pointer]:
+            - /url: https://www.youtube.com/c/SelectorsHub?sub_confirmation=1
+          - heading "UserName" [level=4] [ref=e83]
+          - textbox "user name field" [ref=e84]:
+            - /placeholder: enter name
+          - img [ref=e85]
+          - iframe [ref=e87]:
+            - generic [active] [ref=f4e1]:
+              - generic [ref=f4e7]:
+                - textbox "Current Crush Name" [ref=f4e8]
+                - button "Connect now" [ref=f4e9]
+                - heading "Heaven is here" [level=4] [ref=f4e10]
+                - iframe [ref=f4e11]:
+                  - generic [active] [ref=f5e1]:
+                    - generic [ref=f5e7]:
+                      - textbox "Destiny" [ref=f5e8]
+                      - button "Close it" [ref=f5e9]
+                    - generic [ref=f5e10]: mobile
+              - generic [ref=f4e12]: mobile
+          - textbox "Enter pizza name" [ref=e89]
+        - link "Learn XPath & Advance Automation Concepts" [ref=e92] [cursor=pointer]:
+          - /url: https://www.udemy.com/course/xpath-css-selector-webdom-selectorshub-testcase-studio/
+  - contentinfo [ref=e93]:
+    - contentinfo [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - link "SelectorHub Logo" [ref=e99] [cursor=pointer]:
+              - /url: https://selectorshub.com
+              - img "SelectorHub Logo" [ref=e100]
+            - generic [ref=e101]:
+              - paragraph [ref=e102]: We’re Here to Enhance Your Web Testing—Start Now
+              - paragraph [ref=e103]: support@selectorshub.com
+          - generic [ref=e104]:
+            - heading "Free Tools" [level=4] [ref=e106]
+            - navigation "Menu" [ref=e108]:
+              - list [ref=e109]:
+                - listitem [ref=e110]:
+                  - link "SelectorsHub – Best Tool to auto generate Playwright Locators and Xpath" [ref=e111] [cursor=pointer]:
+                    - /url: https://selectorshub.com/selectorshub/
+                - listitem [ref=e112]:
+                  - link "TestCase Studio" [ref=e113] [cursor=pointer]:
+                    - /url: https://selectorshub.com/testcase-studio/
+                - listitem [ref=e114]:
+                  - link "Check My Links" [ref=e115] [cursor=pointer]:
+                    - /url: https://selectorshub.com/checkmylinks/
+                - listitem [ref=e116]:
+                  - link "Exploratory Tester" [ref=e117] [cursor=pointer]:
+                    - /url: https://selectorshub.com/exploratory-tester/
+                - listitem [ref=e118]:
+                  - link "Screenshot with URL" [ref=e119] [cursor=pointer]:
+                    - /url: https://selectorshub.com/screenshot-with-url/
+                - listitem [ref=e120]:
+                  - link "Page Load Timer" [ref=e121] [cursor=pointer]:
+                    - /url: https://selectorshub.com/page-load-timer/
+                - listitem [ref=e122]:
+                  - link "Testing Daily" [ref=e123] [cursor=pointer]:
+                    - /url: https://selectorshub.com/testing-daily/
+                - listitem [ref=e124]:
+                  - link "Auto Data Filler" [ref=e125] [cursor=pointer]:
+                    - /url: https://selectorshub.com/auto-data-filler/
+                - listitem [ref=e126]:
+                  - link "AutoTestData" [ref=e127] [cursor=pointer]:
+                    - /url: https://selectorshub.com/autotestdata/
+                - listitem [ref=e128]:
+                  - link "Automation Tool Analyzer" [ref=e129] [cursor=pointer]:
+                    - /url: https://selectorshub.com/automation-tool-analyzer/
+                - listitem [ref=e130]:
+                  - link "AI Post Creator" [ref=e131] [cursor=pointer]:
+                    - /url: https://selectorshub.com/ai-post-creator/
+          - generic [ref=e132]:
+            - heading "Paid Tools" [level=4] [ref=e134]
+            - navigation "Menu" [ref=e136]:
+              - list [ref=e137]:
+                - listitem [ref=e138]:
+                  - link "SelectorsHub Pro" [ref=e139] [cursor=pointer]:
+                    - /url: https://selectorshub.com/selectorshub-pro/
+                - listitem [ref=e140]:
+                  - link "TestCase Studio Pro" [ref=e141] [cursor=pointer]:
+                    - /url: https://selectorshub.com/testcase-studio-pro/
+                - listitem [ref=e142]:
+                  - link "Promote with us" [ref=e143] [cursor=pointer]:
+                    - /url: https://selectorshub.com/selectorshub-ads/
+          - generic [ref=e144]:
+            - heading "Resources" [level=4] [ref=e146]
+            - navigation "Menu" [ref=e148]:
+              - list [ref=e149]:
+                - listitem [ref=e150]:
+                  - link "Courses" [ref=e151] [cursor=pointer]:
+                    - /url: https://selectorshub.com/courses-recordings/
+                - listitem [ref=e152]:
+                  - link "Trainings" [ref=e153] [cursor=pointer]:
+                    - /url: https://selectorshub.com/bootcamp/
+                - listitem [ref=e154]:
+                  - link "Video Tutorials" [ref=e155] [cursor=pointer]:
+                    - /url: https://www.youtube.com/c/SelectorsHub?sub_confirmation=1
+                - listitem [ref=e156]:
+                  - link "Meetup" [ref=e157] [cursor=pointer]:
+                    - /url: https://selectorshub.com/meetup/
+                - listitem [ref=e158]:
+                  - link "SelectorsHub Offers" [ref=e159] [cursor=pointer]:
+                    - /url: https://selectorshub.com/offers/
+          - generic [ref=e160]:
+            - heading "Useful Links" [level=4] [ref=e162]
+            - navigation "Menu" [ref=e164]:
+              - list [ref=e165]:
+                - listitem [ref=e166]:
+                  - link "About Us" [ref=e167] [cursor=pointer]:
+                    - /url: https://selectorshub.com/team/
+                - listitem [ref=e168]:
+                  - link "Contact Us" [ref=e169] [cursor=pointer]:
+                    - /url: https://selectorshub.com/contact-us/
+                - listitem [ref=e170]:
+                  - link "Sponsors" [ref=e171] [cursor=pointer]:
+                    - /url: https://selectorshub.com/sponsors/
+                - listitem [ref=e172]:
+                  - link "Practice Page" [ref=e173] [cursor=pointer]:
+                    - /url: https://selectorshub.com/xpath-practice-page/
+                - listitem [ref=e174]:
+                  - link "Cancellation & Refund Policy" [ref=e175] [cursor=pointer]:
+                    - /url: https://selectorshub.com/cancellation-refund-policy/
+                - listitem [ref=e176]:
+                  - link "Certification" [ref=e177] [cursor=pointer]:
+                    - /url: https://selectorshub.com/certification/
+                - listitem [ref=e178]:
+                  - link "Privacy Policy" [ref=e179] [cursor=pointer]:
+                    - /url: https://selectorshub.com/privacy-policy/
+                - listitem [ref=e180]:
+                  - link "Terms of Service" [ref=e181] [cursor=pointer]:
+                    - /url: https://selectorshub.com/terms-of-service/
+        - generic [ref=e182]:
+          - generic [ref=e184]: Copyright © 2026 SelectorsHub ® . All rights reserved
+          - list [ref=e187]:
+            - listitem [ref=e188]:
+              - link "Youtube" [ref=e189] [cursor=pointer]:
+                - /url: https://www.youtube.com/c/SelectorsHub?sub_confirmation=1
+                - generic [ref=e190]: Youtube
+                - img [ref=e191]
+            - listitem [ref=e193]:
+              - link "Telegram" [ref=e194] [cursor=pointer]:
+                - /url: https://t.me/selectorshub
+                - generic [ref=e195]: Telegram
+                - img [ref=e196]
+            - listitem [ref=e198]:
+              - link "Instagram" [ref=e199] [cursor=pointer]:
+                - /url: https://www.instagram.com/SelectorsHub/
+                - generic [ref=e200]: Instagram
+                - img [ref=e201]
+            - listitem [ref=e203]:
+              - link "Linkedin" [ref=e204] [cursor=pointer]:
+                - /url: https://www.linkedin.com/company/selectorshub/about
+                - generic [ref=e205]: Linkedin
+                - img [ref=e206]
+            - listitem [ref=e208]:
+              - link "Facebook" [ref=e209] [cursor=pointer]:
+                - /url: https://www.facebook.com/selectorshub/
+                - generic [ref=e210]: Facebook
+                - img [ref=e211]
+            - listitem [ref=e213]:
+              - link "Twitter" [ref=e214] [cursor=pointer]:
+                - /url: https://x.com/SelectorsHub
+                - generic [ref=e215]: Twitter
+                - img [ref=e216]
+  - generic [ref=e218]: desktop
+```
+
+# Test source
+
+```ts
+  1   | import { test, expect, Locator } from '@playwright/test';
+  2   | 
+  3   | const URL = 'https://selectorshub.com/xpath-practice-page/'; // replace with target page
+  4   | 
+  5   | test.describe('Shadow handling', () => {
+  6   | 
+  7   |     test.beforeEach(async ({ page }) => {
+  8   |         await page.goto(URL);
+  9   |     });
+  10  | 
+  11  |     test('locate Shadow DOM and assert visible', async ({ page }) => {
+  12  | 
+  13  | 
+  14  |         const card1 = page.locator("[data-id='6fef204']");
+  15  |         await card1.getByTitle('user name field').fill('QAtest');
+  16  | 
+  17  |         // Ensure the element is in view before interacting
+  18  |         await card1.locator('#pizza').fill('BakeYourOwnHealthyPizza');
+  19  |         await page.waitForTimeout(2000);
+  20  | 
+  21  |         //closed shadow dom - directly cannot be automated
+  22  | 
+  23  |         // const card2 = page.locator('#concepts');
+  24  |         // await card2.locator('#training').fill('Exploring');
+  25  | 
+  26  |         //Handle with keyboard,mouse for closed shadow dom
+  27  |         await page.keyboard.press('Tab');
+  28  |         await page.keyboard.type('Concept Test - Hidden shadow Dom');
+  29  |         await page.keyboard.press('Tab');
+  30  |         await page.keyboard.press('Tab');
+  31  |         await page.keyboard.type('PSW@123456')
+  32  | 
+  33  |         await page.getByText('Click to practice iframe inside shadow dom scenario').click();
+  34  | 
+  35  |         // const text = await page.evaluate(() => document.querySelector(‘my-element’).shadowRoot.querySelector(‘input’).value);
+  36  | 
+  37  |         //assert
+  38  |         let verify = page.getByText('iframe in Shadow DOM');
+> 39  |         await expect(verify).toHaveText('iframe in Shadow DOM');
+      |                              ^ Error: expect(locator).toHaveText(expected) failed
+  40  | 
+  41  |         await page.waitForTimeout(2000);
+  42  | 
+  43  | 
+  44  | 
+  45  |     });
+  46  | });
+  47  | 
+  48  | 
+  49  | 
+  50  | 
+  51  | 
+  52  | 
+  53  | 
+  54  | 
+  55  | 
+  56  | 
+  57  | 
+  58  | 
+  59  | 
+  60  | 
+  61  | 
+  62  | 
+  63  | 
+  64  | 
+  65  | 
+  66  | 
+  67  | 
+  68  | 
+  69  | 
+  70  | 
+  71  | 
+  72  | // //practice
+  73  | // import { test, expect, Locator } from '@playwright/test';
+  74  | 
+  75  | // const URL = 'https://app.thetestingacademy.com/playwright/widgets/shadow-dom'; // replace with target page
+  76  | 
+  77  | // test.describe('Shadow handling', () => {
+  78  | 
+  79  | //     test.beforeEach(async ({ page }) => {
+  80  | //         await page.goto(URL);
+  81  | //     });
+  82  | 
+  83  | //     test('locate Shadow DOM and assert visible', async ({ page }) => {
+  84  | 
+  85  | 
+  86  | //         const card = page.getByTestId('card-account-card');
+  87  | //         await card.getByTestId('card-account-email').fill('QAtest@gmail.com');
+  88  | //         await card.getByTestId('card-account-password').fill('VDesai');
+  89  | //         await card.getByTestId('card-account-submit').click();
+  90  | //         let verify = page.getByTestId('card-account-status');
+  91  | //         await expect(verify).toContainText('QAtest@gmail.com');
+  92  | 
+  93  | //         const cart = page.getByTestId('counter-cart');
+  94  | //         await cart.getByTestId('counter-cart-dec').click();
+  95  | //         await cart.getByTestId('counter-cart-inc').click();
+  96  | //         let verifycart = page.getByText('3');
+  97  | //         await expect(verifycart).toContainText('3');
+  98  | 
+  99  | 
+  100 | 
+  101 | 
+  102 | 
+  103 | 
+  104 | //         await page.waitForTimeout(2000);
+  105 | 
+  106 | 
+  107 | 
+  108 | //     });
+  109 | 
+  110 | // });
+```

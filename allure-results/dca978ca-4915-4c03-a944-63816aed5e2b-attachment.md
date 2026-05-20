@@ -1,0 +1,391 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Projects\Task_6_Search_and_select_Table\Task_search_Table_select.spec.ts >> Select from table
+- Location: tests\Projects\Task_6_Search_and_select_Table\Task_search_Table_select.spec.ts:3:5
+
+# Error details
+
+```
+Error: locator.click: Unexpected token "" while parsing css selector "tr:has(td:text('Aarav.Sharma')". Did you mean to CSS.escape it?
+Call log:
+  - waiting for tr:has(td:text('Aarav.Sharma') >> td >> nth=0
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - complementary "Practice navigation" [ref=e3]:
+    - generic [ref=e4]:
+      - link "T The Testing Academy" [ref=e5] [cursor=pointer]:
+        - /url: ./index.html
+        - generic [ref=e6]: T
+        - strong [ref=e8]: The Testing Academy
+      - button "Toggle sidebar" [ref=e9] [cursor=pointer]:
+        - img [ref=e10]
+    - generic [ref=e13]:
+      - img [ref=e14]
+      - searchbox / [ref=e17]
+      - generic [ref=e18]: /
+    - navigation [ref=e19]:
+      - generic [ref=e20]:
+        - paragraph [ref=e21]:
+          - img [ref=e22]
+          - generic [ref=e24]: Get started
+        - list [ref=e25]:
+          - listitem [ref=e26]:
+            - link "Overview" [ref=e27] [cursor=pointer]:
+              - /url: ./index.html
+              - img [ref=e29]
+              - generic [ref=e32]: Overview
+      - generic [ref=e33]:
+        - paragraph [ref=e34]:
+          - img [ref=e35]
+          - generic [ref=e37]: Selectors & Locators
+        - list [ref=e38]:
+          - listitem [ref=e39]:
+            - link "Multiple Element Filter" [ref=e40] [cursor=pointer]:
+              - /url: ./multiple_element_filter.html
+              - img [ref=e42]
+              - generic [ref=e45]: Multiple Element Filter
+          - listitem [ref=e46]:
+            - link "Web Table Directory" [ref=e47] [cursor=pointer]:
+              - /url: ./webtable.html
+              - img [ref=e49]
+              - generic [ref=e54]: Web Table Directory
+      - generic [ref=e55]:
+        - paragraph [ref=e56]:
+          - img [ref=e57]
+          - generic [ref=e60]: Tables & Forms
+        - list [ref=e61]:
+          - listitem [ref=e62]:
+            - link "QA Profile Form" [ref=e63] [cursor=pointer]:
+              - /url: ./tables/practice.html
+              - img [ref=e65]
+              - generic [ref=e68]: QA Profile Form
+          - listitem [ref=e69]:
+            - link "Companies Table" [ref=e70] [cursor=pointer]:
+              - /url: ./tables/webtable.html
+              - img [ref=e72]
+              - generic [ref=e75]: Companies Table
+          - listitem [ref=e76]:
+            - link "Tall Buildings Table" [ref=e77] [cursor=pointer]:
+              - /url: ./tables/webtable1.html
+              - img [ref=e79]
+              - generic [ref=e81]: Tall Buildings Table
+          - listitem [ref=e82]:
+            - link "Custom Dropdowns" [ref=e83] [cursor=pointer]:
+              - /url: ./tables/dropdowns.html
+              - img [ref=e85]
+              - generic [ref=e88]: Custom Dropdowns
+          - listitem [ref=e89]:
+            - link "Select Box Variants" [ref=e90] [cursor=pointer]:
+              - /url: ./tables/select-boxes.html
+              - img [ref=e92]
+              - generic [ref=e95]: Select Box Variants
+      - generic [ref=e96]:
+        - paragraph [ref=e97]:
+          - img [ref=e98]
+          - generic [ref=e103]: Frames
+        - list [ref=e104]:
+          - listitem [ref=e105]:
+            - link "Frames overview" [ref=e106] [cursor=pointer]:
+              - /url: ./frames/index.html
+              - img [ref=e108]
+              - generic [ref=e110]: Frames overview
+          - listitem [ref=e111]:
+            - link "Multi-frame frameset" [ref=e112] [cursor=pointer]:
+              - /url: ./frames/multi-frames.html
+              - img [ref=e114]
+              - generic [ref=e119]: Multi-frame frameset
+          - listitem [ref=e120]:
+            - link "Nested iframes" [ref=e121] [cursor=pointer]:
+              - /url: ./frames/nested-iframes.html
+              - img [ref=e123]
+              - generic [ref=e127]: Nested iframes
+      - generic [ref=e128]:
+        - paragraph [ref=e129]:
+          - img [ref=e130]
+          - generic [ref=e132]: Coming next
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - link "Alerts & Modals Soon":
+              - /url: "#"
+              - generic:
+                - img
+              - generic: Alerts & Modals
+              - generic: Soon
+          - listitem [ref=e135]:
+            - link "Windows & Tabs Soon":
+              - /url: "#"
+              - generic:
+                - img
+              - generic: Windows & Tabs
+              - generic: Soon
+          - listitem [ref=e136]:
+            - link "Upload & Download Soon":
+              - /url: "#"
+              - generic:
+                - img
+              - generic: Upload & Download
+              - generic: Soon
+    - generic [ref=e137]:
+      - generic [ref=e138]: © The Testing Academy · 2026
+      - button "Toggle dark mode" [ref=e139] [cursor=pointer]:
+        - img [ref=e140]
+  - generic [ref=e142]:
+    - banner [ref=e143]:
+      - button "Open sidebar" [ref=e144] [cursor=pointer]:
+        - img [ref=e145]
+      - generic [ref=e147]:
+        - link "Practice" [ref=e148] [cursor=pointer]:
+          - /url: ./index.html
+        - img [ref=e149]
+        - strong [ref=e151]: Web Table Directory
+      - generic [ref=e152]:
+        - generic [ref=e153]: 10 rows
+        - button "Toggle dark mode" [ref=e154] [cursor=pointer]:
+          - img [ref=e155]
+          - img [ref=e157]
+    - main [ref=e160]:
+      - region "CloudOps India Employee Directory" [ref=e161]:
+        - generic [ref=e162]: Locator practice · Web table
+        - heading "CloudOps India Employee Directory" [level=1] [ref=e164]:
+          - text: CloudOps India
+          - emphasis [ref=e165]: Employee Directory
+        - paragraph [ref=e166]:
+          - text: A realistic employee table built for practising XPath sibling traversal, CSS
+          - code [ref=e167]: :has()
+          - text: ", checkbox selection, and extracting row data. The data is intentionally Indianised so the names feel familiar."
+        - generic [ref=e168]:
+          - generic [ref=e169]:
+            - strong [ref=e170]: "10"
+            - generic [ref=e171]: Employee rows
+          - generic [ref=e172]:
+            - strong [ref=e173]: "7"
+            - generic [ref=e174]: Visible columns
+          - generic [ref=e175]:
+            - strong [ref=e176]: "3"
+            - generic [ref=e177]: Selector patterns
+          - generic [ref=e178]:
+            - strong [ref=e179]: "0"
+            - generic [ref=e180]: External APIs
+      - region "Web table practice workspace" [ref=e181]:
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - heading "CloudOps India Employee Directory" [level=2] [ref=e185]
+              - paragraph [ref=e186]: Use this table to practise locating rows, checkboxes, and sibling columns.
+            - generic [ref=e187]: Practice page
+          - generic "Table tools" [ref=e188]:
+            - searchbox "Search employee table" [ref=e189]
+            - button "Select Cloud QA" [ref=e190] [cursor=pointer]
+            - button "Clear" [ref=e191] [cursor=pointer]
+          - table "Employee Management System table" [ref=e193]:
+            - rowgroup [ref=e194]:
+              - row "Select Username Employee Name User Role City Project Status" [ref=e195]:
+                - columnheader "Select" [ref=e196]
+                - columnheader "Username" [ref=e197]
+                - columnheader "Employee Name" [ref=e198]
+                - columnheader "User Role" [ref=e199]
+                - columnheader "City" [ref=e200]
+                - columnheader "Project" [ref=e201]
+                - columnheader "Status" [ref=e202]
+            - rowgroup [ref=e203]:
+              - row "Select Aarav.Sharma Aarav.Sharma AS Aarav Sharma EMP-1001 QA Engineer Pune Cloud QA Active" [ref=e204]:
+                - cell "Select Aarav.Sharma" [ref=e205]:
+                  - checkbox "Select Aarav.Sharma" [ref=e206] [cursor=pointer]
+                - cell "Aarav.Sharma" [ref=e207]
+                - cell "AS Aarav Sharma EMP-1001" [ref=e208]:
+                  - generic [ref=e209]:
+                    - generic [ref=e210]: AS
+                    - generic [ref=e211]:
+                      - strong [ref=e212]: Aarav Sharma
+                      - generic [ref=e213]: EMP-1001
+                - cell "QA Engineer" [ref=e214]
+                - cell "Pune" [ref=e215]
+                - cell "Cloud QA" [ref=e216]
+                - cell "Active" [ref=e217]:
+                  - generic [ref=e218]: Active
+              - row "Select Priya.Nair Priya.Nair PN Priya Nair EMP-1002 Product Owner Bengaluru Nimbus CRM Active" [ref=e219]:
+                - cell "Select Priya.Nair" [ref=e220]:
+                  - checkbox "Select Priya.Nair" [ref=e221] [cursor=pointer]
+                - cell "Priya.Nair" [ref=e222]
+                - cell "PN Priya Nair EMP-1002" [ref=e223]:
+                  - generic [ref=e224]:
+                    - generic [ref=e225]: PN
+                    - generic [ref=e226]:
+                      - strong [ref=e227]: Priya Nair
+                      - generic [ref=e228]: EMP-1002
+                - cell "Product Owner" [ref=e229]
+                - cell "Bengaluru" [ref=e230]
+                - cell "Nimbus CRM" [ref=e231]
+                - cell "Active" [ref=e232]:
+                  - generic [ref=e233]: Active
+              - row "Select Rohan.Mehta Rohan.Mehta RM Rohan Mehta EMP-1003 SDET Lead Gurugram Cloud QA Active" [ref=e234]:
+                - cell "Select Rohan.Mehta" [ref=e235]:
+                  - checkbox "Select Rohan.Mehta" [ref=e236] [cursor=pointer]
+                - cell "Rohan.Mehta" [ref=e237]
+                - cell "RM Rohan Mehta EMP-1003" [ref=e238]:
+                  - generic [ref=e239]:
+                    - generic [ref=e240]: RM
+                    - generic [ref=e241]:
+                      - strong [ref=e242]: Rohan Mehta
+                      - generic [ref=e243]: EMP-1003
+                - cell "SDET Lead" [ref=e244]
+                - cell "Gurugram" [ref=e245]
+                - cell "Cloud QA" [ref=e246]
+                - cell "Active" [ref=e247]:
+                  - generic [ref=e248]: Active
+              - row "Select Ananya.Iyer Ananya.Iyer AI Ananya Iyer EMP-1004 DevOps Engineer Chennai Monsoon Pay Onboarding" [ref=e249]:
+                - cell "Select Ananya.Iyer" [ref=e250]:
+                  - checkbox "Select Ananya.Iyer" [ref=e251] [cursor=pointer]
+                - cell "Ananya.Iyer" [ref=e252]
+                - cell "AI Ananya Iyer EMP-1004" [ref=e253]:
+                  - generic [ref=e254]:
+                    - generic [ref=e255]: AI
+                    - generic [ref=e256]:
+                      - strong [ref=e257]: Ananya Iyer
+                      - generic [ref=e258]: EMP-1004
+                - cell "DevOps Engineer" [ref=e259]
+                - cell "Chennai" [ref=e260]
+                - cell "Monsoon Pay" [ref=e261]
+                - cell "Onboarding" [ref=e262]:
+                  - generic [ref=e263]: Onboarding
+              - row "Select Kabir.Khan Kabir.Khan KK Kabir Khan EMP-1005 Security Tester Hyderabad Udaan Risk Active" [ref=e264]:
+                - cell "Select Kabir.Khan" [ref=e265]:
+                  - checkbox "Select Kabir.Khan" [ref=e266] [cursor=pointer]
+                - cell "Kabir.Khan" [ref=e267]
+                - cell "KK Kabir Khan EMP-1005" [ref=e268]:
+                  - generic [ref=e269]:
+                    - generic [ref=e270]: KK
+                    - generic [ref=e271]:
+                      - strong [ref=e272]: Kabir Khan
+                      - generic [ref=e273]: EMP-1005
+                - cell "Security Tester" [ref=e274]
+                - cell "Hyderabad" [ref=e275]
+                - cell "Udaan Risk" [ref=e276]
+                - cell "Active" [ref=e277]:
+                  - generic [ref=e278]: Active
+              - row "Select Meera.Rao Meera.Rao MR Meera Rao EMP-1006 Automation Architect Mumbai Cloud Ledger Active" [ref=e279]:
+                - cell "Select Meera.Rao" [ref=e280]:
+                  - checkbox "Select Meera.Rao" [ref=e281] [cursor=pointer]
+                - cell "Meera.Rao" [ref=e282]
+                - cell "MR Meera Rao EMP-1006" [ref=e283]:
+                  - generic [ref=e284]:
+                    - generic [ref=e285]: MR
+                    - generic [ref=e286]:
+                      - strong [ref=e287]: Meera Rao
+                      - generic [ref=e288]: EMP-1006
+                - cell "Automation Architect" [ref=e289]
+                - cell "Mumbai" [ref=e290]
+                - cell "Cloud Ledger" [ref=e291]
+                - cell "Active" [ref=e292]:
+                  - generic [ref=e293]: Active
+              - row "Select Vikram.Singh Vikram.Singh VS Vikram Singh EMP-1007 API Tester Noida Bharat API Inactive" [ref=e294]:
+                - cell "Select Vikram.Singh" [ref=e295]:
+                  - checkbox "Select Vikram.Singh" [ref=e296] [cursor=pointer]
+                - cell "Vikram.Singh" [ref=e297]
+                - cell "VS Vikram Singh EMP-1007" [ref=e298]:
+                  - generic [ref=e299]:
+                    - generic [ref=e300]: VS
+                    - generic [ref=e301]:
+                      - strong [ref=e302]: Vikram Singh
+                      - generic [ref=e303]: EMP-1007
+                - cell "API Tester" [ref=e304]
+                - cell "Noida" [ref=e305]
+                - cell "Bharat API" [ref=e306]
+                - cell "Inactive" [ref=e307]:
+                  - generic [ref=e308]: Inactive
+              - row "Select Neha.Patel Neha.Patel NP Neha Patel EMP-1008 Release Manager Ahmedabad Cloud Retail Active" [ref=e309]:
+                - cell "Select Neha.Patel" [ref=e310]:
+                  - checkbox "Select Neha.Patel" [ref=e311] [cursor=pointer]
+                - cell "Neha.Patel" [ref=e312]
+                - cell "NP Neha Patel EMP-1008" [ref=e313]:
+                  - generic [ref=e314]:
+                    - generic [ref=e315]: NP
+                    - generic [ref=e316]:
+                      - strong [ref=e317]: Neha Patel
+                      - generic [ref=e318]: EMP-1008
+                - cell "Release Manager" [ref=e319]
+                - cell "Ahmedabad" [ref=e320]
+                - cell "Cloud Retail" [ref=e321]
+                - cell "Active" [ref=e322]:
+                  - generic [ref=e323]: Active
+              - row "Select Ishaan.Das Ishaan.Das ID Ishaan Das EMP-1009 Manual Tester Kolkata Cloud QA Onboarding" [ref=e324]:
+                - cell "Select Ishaan.Das" [ref=e325]:
+                  - checkbox "Select Ishaan.Das" [ref=e326] [cursor=pointer]
+                - cell "Ishaan.Das" [ref=e327]
+                - cell "ID Ishaan Das EMP-1009" [ref=e328]:
+                  - generic [ref=e329]:
+                    - generic [ref=e330]: ID
+                    - generic [ref=e331]:
+                      - strong [ref=e332]: Ishaan Das
+                      - generic [ref=e333]: EMP-1009
+                - cell "Manual Tester" [ref=e334]
+                - cell "Kolkata" [ref=e335]
+                - cell "Cloud QA" [ref=e336]
+                - cell "Onboarding" [ref=e337]:
+                  - generic [ref=e338]: Onboarding
+              - row "Select Sana.Qureshi Sana.Qureshi SQ Sana Qureshi EMP-1010 Data QA Analyst Indore Sky Analytics Active" [ref=e339]:
+                - cell "Select Sana.Qureshi" [ref=e340]:
+                  - checkbox "Select Sana.Qureshi" [ref=e341] [cursor=pointer]
+                - cell "Sana.Qureshi" [ref=e342]
+                - cell "SQ Sana Qureshi EMP-1010" [ref=e343]:
+                  - generic [ref=e344]:
+                    - generic [ref=e345]: SQ
+                    - generic [ref=e346]:
+                      - strong [ref=e347]: Sana Qureshi
+                      - generic [ref=e348]: EMP-1010
+                - cell "Data QA Analyst" [ref=e349]
+                - cell "Indore" [ref=e350]
+                - cell "Sky Analytics" [ref=e351]
+                - cell "Active" [ref=e352]:
+                  - generic [ref=e353]: Active
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - generic [ref=e356]: 10 visible rows
+              - generic [ref=e357]: 0 selected
+            - generic [ref=e358]: Selected usernames will appear here.
+        - complementary "Lesson and solution" [ref=e359]:
+          - generic [ref=e360]:
+            - heading "What students should practise" [level=2] [ref=e361]
+            - paragraph [ref=e362]: The page is the problem. Try these on your own first — the solution stays hidden until you reveal it.
+            - list [ref=e363]:
+              - listitem [ref=e364]: Click the checkbox beside a username using XPath preceding-sibling.
+              - listitem [ref=e365]:
+                - text: Find a complete row using CSS
+                - code [ref=e366]: tr:has(td:text(...))
+                - text: .
+              - listitem [ref=e367]: Read all the data after a username using following-sibling columns.
+              - listitem [ref=e368]: Filter rows by team, city, role, or status without relying on hardcoded row numbers.
+          - group [ref=e369]:
+            - generic "Playwright solution Try the practice first — reveal the snippet only when you need a hint. Show solution" [ref=e370] [cursor=pointer]:
+              - img [ref=e372]
+              - generic [ref=e374]:
+                - strong [ref=e375]: Playwright solution
+                - generic [ref=e376]: Try the practice first — reveal the snippet only when you need a hint.
+              - generic [ref=e377]: Show solution
+```
+
+# Test source
+
+```ts
+  1 | import { test, expect } from '@playwright/test';
+  2 | 
+  3 | test('Select from table', async ({ page }) => {
+  4 |     await page.goto('https://app.thetestingacademy.com/playwright/webtable');
+  5 | 
+> 6 |     await page.locator("tr:has(td:text('Aarav.Sharma')").locator("td").first().click();
+    |                                                                                ^ Error: locator.click: Unexpected token "" while parsing css selector "tr:has(td:text('Aarav.Sharma')". Did you mean to CSS.escape it?
+  7 |     await page.waitForTimeout(3000);
+  8 | 
+  9 | });
+```

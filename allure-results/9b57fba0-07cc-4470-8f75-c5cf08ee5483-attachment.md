@@ -1,0 +1,1972 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: 14_FileUpload\253_Multi_FileUpload.spec.ts >> FileUpload handling >> locate FileUpload and upload
+- Location: tests\14_FileUpload\253_Multi_FileUpload.spec.ts:12:9
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('.pf-v6-c-button pf-m-secondary')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - link "Skip to content" [ref=e6] [cursor=pointer]:
+      - /url: "#ws-page-main"
+      - generic [ref=e7]: Skip to content
+    - banner [ref=e8]:
+      - generic [ref=e9]:
+        - button "Global navigation" [expanded] [ref=e11] [cursor=pointer]:
+          - img [ref=e13]
+        - link "PatternFly" [ref=e16] [cursor=pointer]:
+          - /url: /
+          - img "PatternFly" [ref=e17]
+      - generic [ref=e38]:
+        - button "Expandable search input toggle" [ref=e43] [cursor=pointer]:
+          - img [ref=e45]
+        - link "PatternFly GitHub page" [ref=e48] [cursor=pointer]:
+          - /url: //github.com/patternfly
+          - img [ref=e50]
+        - 'button "Theme selection, current: System" [ref=e53] [cursor=pointer]':
+          - img [ref=e57]
+          - img [ref=e61]
+        - button "Release 6.4.0" [ref=e64] [cursor=pointer]:
+          - generic [ref=e65]: Release 6.4.0
+          - img [ref=e68]
+    - navigation "Side Nav" [ref=e72]:
+      - list [ref=e73]:
+        - listitem [ref=e74]:
+          - button "Get started" [ref=e75] [cursor=pointer]:
+            - text: Get started
+            - img [ref=e78]
+        - listitem [ref=e80]:
+          - button "Design foundations" [ref=e81] [cursor=pointer]:
+            - text: Design foundations
+            - img [ref=e84]
+        - listitem [ref=e86]:
+          - button "Tokens" [ref=e87] [cursor=pointer]:
+            - text: Tokens
+            - img [ref=e90]
+        - listitem [ref=e92]:
+          - button "PatternFly AI" [ref=e93] [cursor=pointer]:
+            - text: PatternFly AI
+            - img [ref=e96]
+        - listitem [ref=e98]:
+          - button "Accessibility" [ref=e99] [cursor=pointer]:
+            - text: Accessibility
+            - img [ref=e102]
+        - listitem [ref=e104]:
+          - button "UX writing" [ref=e105] [cursor=pointer]:
+            - text: UX writing
+            - img [ref=e108]
+        - listitem [ref=e110]:
+          - button "Components" [expanded] [ref=e111] [cursor=pointer]:
+            - text: Components
+            - img [ref=e114]
+          - region "Components" [ref=e116]:
+            - list [ref=e117]:
+              - listitem [ref=e118]:
+                - link "All components" [ref=e119] [cursor=pointer]:
+                  - /url: /components/all-components
+                  - generic [ref=e121]: All components
+              - listitem [ref=e122]:
+                - link "About modal" [ref=e123] [cursor=pointer]:
+                  - /url: /components/about-modal
+                  - generic [ref=e125]: About modal
+              - listitem [ref=e126]:
+                - link "Accordion" [ref=e127] [cursor=pointer]:
+                  - /url: /components/accordion
+                  - generic [ref=e129]: Accordion
+              - listitem [ref=e130]:
+                - link "Action list" [ref=e131] [cursor=pointer]:
+                  - /url: /components/action-list
+                  - generic [ref=e133]: Action list
+              - listitem [ref=e134]:
+                - link "Alert" [ref=e135] [cursor=pointer]:
+                  - /url: /components/alert
+                  - generic [ref=e137]: Alert
+              - listitem [ref=e138]:
+                - link "Avatar" [ref=e139] [cursor=pointer]:
+                  - /url: /components/avatar
+                  - generic [ref=e141]: Avatar
+              - listitem [ref=e142]:
+                - link "Back to top" [ref=e143] [cursor=pointer]:
+                  - /url: /components/back-to-top
+                  - generic [ref=e145]: Back to top
+              - listitem [ref=e146]:
+                - link "Backdrop" [ref=e147] [cursor=pointer]:
+                  - /url: /components/backdrop
+                  - generic [ref=e149]: Backdrop
+              - listitem [ref=e150]:
+                - link "Background image" [ref=e151] [cursor=pointer]:
+                  - /url: /components/background-image
+                  - generic [ref=e153]: Background image
+              - listitem [ref=e154]:
+                - link "Badge" [ref=e155] [cursor=pointer]:
+                  - /url: /components/badge
+                  - generic [ref=e157]: Badge
+              - listitem [ref=e158]:
+                - link "Banner" [ref=e159] [cursor=pointer]:
+                  - /url: /components/banner
+                  - generic [ref=e161]: Banner
+              - listitem [ref=e162]:
+                - link "Brand" [ref=e163] [cursor=pointer]:
+                  - /url: /components/brand
+                  - generic [ref=e165]: Brand
+              - listitem [ref=e166]:
+                - link "Breadcrumb" [ref=e167] [cursor=pointer]:
+                  - /url: /components/breadcrumb
+                  - generic [ref=e169]: Breadcrumb
+              - listitem [ref=e170]:
+                - link "Button" [ref=e171] [cursor=pointer]:
+                  - /url: /components/button
+                  - generic [ref=e173]: Button
+              - listitem [ref=e174]:
+                - link "Card" [ref=e175] [cursor=pointer]:
+                  - /url: /components/card
+                  - generic [ref=e177]: Card
+              - listitem [ref=e178]:
+                - link "Chip Deprecated" [ref=e179] [cursor=pointer]:
+                  - /url: /components/chip
+                  - generic [ref=e180]:
+                    - generic [ref=e181]: Chip
+                    - generic [ref=e185]: Deprecated
+              - listitem [ref=e186]:
+                - link "Clipboard copy" [ref=e187] [cursor=pointer]:
+                  - /url: /components/clipboard-copy
+                  - generic [ref=e189]: Clipboard copy
+              - listitem [ref=e190]:
+                - link "Code block" [ref=e191] [cursor=pointer]:
+                  - /url: /components/code-block
+                  - generic [ref=e193]: Code block
+              - listitem [ref=e194]:
+                - link "Code editor" [ref=e195] [cursor=pointer]:
+                  - /url: /components/code-editor
+                  - generic [ref=e197]: Code editor
+              - listitem [ref=e198]:
+                - link "Content" [ref=e199] [cursor=pointer]:
+                  - /url: /components/content
+                  - generic [ref=e201]: Content
+              - listitem [ref=e202]:
+                - link "Data list" [ref=e203] [cursor=pointer]:
+                  - /url: /components/data-list
+                  - generic [ref=e205]: Data list
+              - listitem [ref=e206]:
+                - button "Date and time" [ref=e207] [cursor=pointer]:
+                  - text: Date and time
+                  - img [ref=e210]
+              - listitem [ref=e212]:
+                - link "Description list" [ref=e213] [cursor=pointer]:
+                  - /url: /components/description-list
+                  - generic [ref=e215]: Description list
+              - listitem [ref=e216]:
+                - link "Divider" [ref=e217] [cursor=pointer]:
+                  - /url: /components/divider
+                  - generic [ref=e219]: Divider
+              - listitem [ref=e220]:
+                - link "Drag and drop" [ref=e221] [cursor=pointer]:
+                  - /url: /components/drag-and-drop
+                  - generic [ref=e223]: Drag and drop
+              - listitem [ref=e224]:
+                - link "Drawer" [ref=e225] [cursor=pointer]:
+                  - /url: /components/drawer
+                  - generic [ref=e227]: Drawer
+              - listitem [ref=e228]:
+                - link "Dual list selector" [ref=e229] [cursor=pointer]:
+                  - /url: /components/dual-list-selector
+                  - generic [ref=e231]: Dual list selector
+              - listitem [ref=e232]:
+                - link "Empty state" [ref=e233] [cursor=pointer]:
+                  - /url: /components/empty-state
+                  - generic [ref=e235]: Empty state
+              - listitem [ref=e236]:
+                - link "Expandable section" [ref=e237] [cursor=pointer]:
+                  - /url: /components/expandable-section
+                  - generic [ref=e239]: Expandable section
+              - listitem [ref=e240]:
+                - button "File upload" [expanded] [ref=e241] [cursor=pointer]:
+                  - text: File upload
+                  - img [ref=e244]
+                - region "File upload" [ref=e246]:
+                  - list [ref=e247]:
+                    - listitem [ref=e248]:
+                      - link "Multiple file upload" [ref=e249] [cursor=pointer]:
+                        - /url: /components/file-upload/multiple-file-upload
+                        - generic [ref=e251]: Multiple file upload
+                    - listitem [ref=e252]:
+                      - link "Simple file upload" [ref=e253] [cursor=pointer]:
+                        - /url: /components/file-upload/simple-file-upload
+                        - generic [ref=e255]: Simple file upload
+              - listitem [ref=e256]:
+                - button "Forms" [ref=e257] [cursor=pointer]:
+                  - text: Forms
+                  - img [ref=e260]
+              - listitem [ref=e262]:
+                - link "Helper text" [ref=e263] [cursor=pointer]:
+                  - /url: /components/helper-text
+                  - generic [ref=e265]: Helper text
+              - listitem [ref=e266]:
+                - link "Hint" [ref=e267] [cursor=pointer]:
+                  - /url: /components/hint
+                  - generic [ref=e269]: Hint
+              - listitem [ref=e270]:
+                - link "Icon" [ref=e271] [cursor=pointer]:
+                  - /url: /components/icon
+                  - generic [ref=e273]: Icon
+              - listitem [ref=e274]:
+                - link "Inline edit" [ref=e275] [cursor=pointer]:
+                  - /url: /components/inline-edit
+                  - generic [ref=e277]: Inline edit
+              - listitem [ref=e278]:
+                - link "Input group" [ref=e279] [cursor=pointer]:
+                  - /url: /components/input-group
+                  - generic [ref=e281]: Input group
+              - listitem [ref=e282]:
+                - link "Jump links" [ref=e283] [cursor=pointer]:
+                  - /url: /components/jump-links
+                  - generic [ref=e285]: Jump links
+              - listitem [ref=e286]:
+                - link "Label" [ref=e287] [cursor=pointer]:
+                  - /url: /components/label
+                  - generic [ref=e289]: Label
+              - listitem [ref=e290]:
+                - link "List" [ref=e291] [cursor=pointer]:
+                  - /url: /components/list
+                  - generic [ref=e293]: List
+              - listitem [ref=e294]:
+                - link "Login page" [ref=e295] [cursor=pointer]:
+                  - /url: /components/login-page
+                  - generic [ref=e297]: Login page
+              - listitem [ref=e298]:
+                - link "Masthead" [ref=e299] [cursor=pointer]:
+                  - /url: /components/masthead
+                  - generic [ref=e301]: Masthead
+              - listitem [ref=e302]:
+                - button "Menus" [ref=e303] [cursor=pointer]:
+                  - text: Menus
+                  - img [ref=e306]
+              - listitem [ref=e308]:
+                - link "Modal" [ref=e309] [cursor=pointer]:
+                  - /url: /components/modal
+                  - generic [ref=e311]: Modal
+              - listitem [ref=e312]:
+                - link "Navigation" [ref=e313] [cursor=pointer]:
+                  - /url: /components/navigation
+                  - generic [ref=e315]: Navigation
+              - listitem [ref=e316]:
+                - link "Notification badge" [ref=e317] [cursor=pointer]:
+                  - /url: /components/notification-badge
+                  - generic [ref=e319]: Notification badge
+              - listitem [ref=e320]:
+                - link "Notification drawer" [ref=e321] [cursor=pointer]:
+                  - /url: /components/notification-drawer
+                  - generic [ref=e323]: Notification drawer
+              - listitem [ref=e324]:
+                - link "Number input" [ref=e325] [cursor=pointer]:
+                  - /url: /components/number-input
+                  - generic [ref=e327]: Number input
+              - listitem [ref=e328]:
+                - link "Overflow menu" [ref=e329] [cursor=pointer]:
+                  - /url: /components/overflow-menu
+                  - generic [ref=e331]: Overflow menu
+              - listitem [ref=e332]:
+                - link "Page" [ref=e333] [cursor=pointer]:
+                  - /url: /components/page
+                  - generic [ref=e335]: Page
+              - listitem [ref=e336]:
+                - link "Pagination" [ref=e337] [cursor=pointer]:
+                  - /url: /components/pagination
+                  - generic [ref=e339]: Pagination
+              - listitem [ref=e340]:
+                - link "Panel" [ref=e341] [cursor=pointer]:
+                  - /url: /components/panel
+                  - generic [ref=e343]: Panel
+              - listitem [ref=e344]:
+                - link "Password generator Demo" [ref=e345] [cursor=pointer]:
+                  - /url: /components/password-generator
+                  - generic [ref=e346]:
+                    - generic [ref=e347]: Password generator
+                    - generic [ref=e351]: Demo
+              - listitem [ref=e352]:
+                - link "Password strength Demo" [ref=e353] [cursor=pointer]:
+                  - /url: /components/password-strength
+                  - generic [ref=e354]:
+                    - generic [ref=e355]: Password strength
+                    - generic [ref=e359]: Demo
+              - listitem [ref=e360]:
+                - link "Popover" [ref=e361] [cursor=pointer]:
+                  - /url: /components/popover
+                  - generic [ref=e363]: Popover
+              - listitem [ref=e364]:
+                - link "Progress" [ref=e365] [cursor=pointer]:
+                  - /url: /components/progress
+                  - generic [ref=e367]: Progress
+              - listitem [ref=e368]:
+                - link "Progress stepper" [ref=e369] [cursor=pointer]:
+                  - /url: /components/progress-stepper
+                  - generic [ref=e371]: Progress stepper
+              - listitem [ref=e372]:
+                - link "Search input" [ref=e373] [cursor=pointer]:
+                  - /url: /components/search-input
+                  - generic [ref=e375]: Search input
+              - listitem [ref=e376]:
+                - link "Sidebar" [ref=e377] [cursor=pointer]:
+                  - /url: /components/sidebar
+                  - generic [ref=e379]: Sidebar
+              - listitem [ref=e380]:
+                - link "Simple list" [ref=e381] [cursor=pointer]:
+                  - /url: /components/simple-list
+                  - generic [ref=e383]: Simple list
+              - listitem [ref=e384]:
+                - link "Skeleton" [ref=e385] [cursor=pointer]:
+                  - /url: /components/skeleton
+                  - generic [ref=e387]: Skeleton
+              - listitem [ref=e388]:
+                - link "Skip to content" [ref=e389] [cursor=pointer]:
+                  - /url: /components/skip-to-content
+                  - generic [ref=e391]: Skip to content
+              - listitem [ref=e392]:
+                - link "Slider" [ref=e393] [cursor=pointer]:
+                  - /url: /components/slider
+                  - generic [ref=e395]: Slider
+              - listitem [ref=e396]:
+                - link "Spinner" [ref=e397] [cursor=pointer]:
+                  - /url: /components/spinner
+                  - generic [ref=e399]: Spinner
+              - listitem [ref=e400]:
+                - link "Switch" [ref=e401] [cursor=pointer]:
+                  - /url: /components/switch
+                  - generic [ref=e403]: Switch
+              - listitem [ref=e404]:
+                - link "Table" [ref=e405] [cursor=pointer]:
+                  - /url: /components/table
+                  - generic [ref=e407]: Table
+              - listitem [ref=e408]:
+                - link "Tabs" [ref=e409] [cursor=pointer]:
+                  - /url: /components/tabs
+                  - generic [ref=e411]: Tabs
+              - listitem [ref=e412]:
+                - link "Text input group" [ref=e413] [cursor=pointer]:
+                  - /url: /components/text-input-group
+                  - generic [ref=e415]: Text input group
+              - listitem [ref=e416]:
+                - link "Tile Deprecated" [ref=e417] [cursor=pointer]:
+                  - /url: /components/tile
+                  - generic [ref=e418]:
+                    - generic [ref=e419]: Tile
+                    - generic [ref=e423]: Deprecated
+              - listitem [ref=e424]:
+                - link "Timestamp" [ref=e425] [cursor=pointer]:
+                  - /url: /components/timestamp
+                  - generic [ref=e427]: Timestamp
+              - listitem [ref=e428]:
+                - link "Title" [ref=e429] [cursor=pointer]:
+                  - /url: /components/title
+                  - generic [ref=e431]: Title
+              - listitem [ref=e432]:
+                - link "Toggle group" [ref=e433] [cursor=pointer]:
+                  - /url: /components/toggle-group
+                  - generic [ref=e435]: Toggle group
+              - listitem [ref=e436]:
+                - link "Toolbar" [ref=e437] [cursor=pointer]:
+                  - /url: /components/toolbar
+                  - generic [ref=e439]: Toolbar
+              - listitem [ref=e440]:
+                - link "Tooltip" [ref=e441] [cursor=pointer]:
+                  - /url: /components/tooltip
+                  - generic [ref=e443]: Tooltip
+              - listitem [ref=e444]:
+                - link "Tree view" [ref=e445] [cursor=pointer]:
+                  - /url: /components/tree-view
+                  - generic [ref=e447]: Tree view
+              - listitem [ref=e448]:
+                - link "Truncate" [ref=e449] [cursor=pointer]:
+                  - /url: /components/truncate
+                  - generic [ref=e451]: Truncate
+              - listitem [ref=e452]:
+                - link "Wizard" [ref=e453] [cursor=pointer]:
+                  - /url: /components/wizard
+                  - generic [ref=e455]: Wizard
+        - listitem [ref=e456]:
+          - button "Patterns" [ref=e457] [cursor=pointer]:
+            - text: Patterns
+            - img [ref=e460]
+        - listitem [ref=e462]:
+          - button "Extensions" [ref=e463] [cursor=pointer]:
+            - text: Extensions
+            - img [ref=e466]
+        - listitem [ref=e468]:
+          - button "Component groups" [ref=e469] [cursor=pointer]:
+            - text: Component groups
+            - img [ref=e472]
+        - listitem [ref=e474]:
+          - button "Charts" [ref=e475] [cursor=pointer]:
+            - text: Charts
+            - img [ref=e478]
+        - listitem [ref=e480]:
+          - button "Topology" [ref=e481] [cursor=pointer]:
+            - text: Topology
+            - img [ref=e484]
+        - listitem [ref=e486]:
+          - button "Layouts" [ref=e487] [cursor=pointer]:
+            - text: Layouts
+            - img [ref=e490]
+        - listitem [ref=e492]:
+          - button "Utility classes" [ref=e493] [cursor=pointer]:
+            - text: Utility classes
+            - img [ref=e496]
+        - listitem [ref=e498]:
+          - button "Developer resources" [ref=e499] [cursor=pointer]:
+            - text: Developer resources
+            - img [ref=e502]
+        - listitem [ref=e504]:
+          - button "Training" [ref=e505] [cursor=pointer]:
+            - text: Training
+            - img [ref=e508]
+    - generic [ref=e511]:
+      - main [ref=e512]:
+        - generic [ref=e513]:
+          - generic [ref=e516]:
+            - heading "Multiple file upload" [level=1] [ref=e519]
+            - paragraph [ref=e520]: A multiple file upload component allows users to select and upload multiple files to a specific location.
+          - list [ref=e524]:
+            - listitem [ref=e525]:
+              - link "React" [ref=e526] [cursor=pointer]:
+                - /url: /components/file-upload/multiple-file-upload
+            - listitem [ref=e527]:
+              - link "React demos" [ref=e528] [cursor=pointer]:
+                - /url: /components/file-upload/multiple-file-upload/react-demos
+            - listitem [ref=e529]:
+              - link "HTML" [ref=e530] [cursor=pointer]:
+                - /url: /components/file-upload/multiple-file-upload/html
+            - listitem [ref=e531]:
+              - link "Design guidelines" [ref=e532] [cursor=pointer]:
+                - /url: /components/file-upload/multiple-file-upload/design-guidelines
+          - generic [ref=e536]:
+            - navigation "Table of contents" [ref=e537]:
+              - button "Table of contents" [ref=e541] [cursor=pointer]:
+                - img [ref=e544]
+                - generic [ref=e546]: Table of contents
+            - generic [ref=e547]:
+              - paragraph [ref=e548]: "Multiple file upload is able to:"
+              - list [ref=e549]:
+                - listitem [ref=e550]: Accept one or more files via browse or drag-and-drop
+                - listitem [ref=e551]:
+                  - text: Provide their data to you using file objects via the
+                  - code [ref=e552]: onFileDrop
+                  - text: callback prop
+                - listitem [ref=e553]: Read files as dataURLs, calling provided callbacks as needed when files start/finish being read, as well as when the read succeeds or fails
+                - listitem [ref=e554]:
+                  - text: Display (in real time) the upload progress/status of each file
+                  - list [ref=e555]:
+                    - listitem [ref=e556]: Uploaded files are represented by the multiple file upload status item component, this component includes the aforementioned built-in file reading logic
+                    - listitem [ref=e557]:
+                      - text: If you prefer to supply your own file reading logic and strictly use multiple file upload status item as a display component, the
+                      - code [ref=e558]: customFileHandler
+                      - text: ","
+                      - code [ref=e559]: fileName
+                      - text: ","
+                      - code [ref=e560]: fileSize
+                      - text: ","
+                      - code [ref=e561]: progressValue
+                      - text: ", and"
+                      - code [ref=e562]: progressVariant
+                      - text: props exist to allow you to do that
+              - heading "Restricting file size and type" [level=2] [ref=e565]:
+                - button [ref=e567] [cursor=pointer]:
+                  - img [ref=e568]
+                - text: Restricting file size and type
+              - paragraph [ref=e570]:
+                - text: As with singular file upload, any
+                - link "props accepted by react-dropzone's Dropzone component" [ref=e571] [cursor=pointer]:
+                  - /url: https://react-dropzone.js.org/#!/Dropzone
+                - text: can be passed as a dropzoneProps object in order to customize the behavior of the Dropzone, such as restricting the type of files allowed. The following examples will only accept the files they list as accepted. Note that file type determination is not reliable across platforms (see the note on react-dropzone's docs about the accept prop), so be sure to test the behavior of your file upload restriction on all browsers and operating systems targeted by your application.
+              - 'heading "IMPORTANT: A note about security" [level=3] [ref=e574]':
+                - button [ref=e576] [cursor=pointer]:
+                  - img [ref=e577]
+                - text: "IMPORTANT: A note about security"
+              - paragraph [ref=e579]: Restricting file sizes and types in this way is for user convenience only, and it cannot prevent a malicious user from submitting anything to your server. As with any user input, your application should also validate, sanitize and/or reject restricted files on the server side.
+              - heading "Composable structure" [level=2] [ref=e582]:
+                - button [ref=e584] [cursor=pointer]:
+                  - img [ref=e585]
+                - text: Composable structure
+              - paragraph [ref=e587]: "File upload - multiple is designed in a composable manner to make customization easier. The standard sub-component relationships are arranged as follows:"
+              - code [ref=e591]: <MultipleFileUpload> <MultipleFileUploadMain /> <MultipleFileUploadStatus> <MultipleFileUploadStatusItem /> </MultipleFileUploadStatus> </MultipleFileUpload>
+              - heading "Examples" [level=2] [ref=e594]:
+                - button [ref=e596] [cursor=pointer]:
+                  - img [ref=e597]
+                - text: Examples
+              - generic [ref=e599]:
+                - generic [ref=e600]:
+                  - heading "Basic" [level=3] [ref=e603]:
+                    - button [ref=e605] [cursor=pointer]:
+                      - img [ref=e606]
+                    - text: Basic
+                  - paragraph [ref=e608]: The below example demonstrates a typical application of file upload - multiple, with a few tweaks from that typical application to enhance the convenience of the example.
+                  - paragraph [ref=e609]:
+                    - text: The "Show as horizontal" checkbox can be used to easily toggle the
+                    - code [ref=e610]: isHorizontal
+                    - text: prop, showing our available styling variations.
+                  - paragraph [ref=e611]:
+                    - text: The "Demonstrate error reporting by forcing uploads to fail" checkbox shows how our
+                    - code [ref=e612]: progressHelperText
+                    - text: prop can be used to provide status messages to users, such as when a file fails to upload. While this checkbox is checked it will cause any file uploaded to automatically fail the file reading process, and helper text will be dynamically rendered which informs the user of that error.
+                - generic [ref=e614]:
+                  - generic [active] [ref=e615]:
+                    - generic [ref=e616]:
+                      - generic [ref=e617]:
+                        - img [ref=e619]
+                        - generic [ref=e621]:
+                          - text: Drag and drop files here
+                          - generic [ref=e622]: or
+                      - button "Upload" [ref=e624] [cursor=pointer]:
+                        - generic [ref=e625]: Upload
+                      - generic [ref=e626]: "Accepted file types: JPEG, Doc, PDF, PNG"
+                    - generic [ref=e628]:
+                      - button "2 of 2 files uploaded" [expanded] [ref=e630] [cursor=pointer]:
+                        - img [ref=e633]
+                        - generic [ref=e636]:
+                          - img [ref=e638]
+                          - generic [ref=e640]: 2 of 2 files uploaded
+                      - region "2 of 2 files uploaded" [ref=e641]:
+                        - list "Current uploads" [ref=e642]:
+                          - listitem [ref=e643]:
+                            - img [ref=e645]
+                            - generic [ref=e647]:
+                              - generic [ref=e648]: Progress value is 100%.
+                              - generic [ref=e649]:
+                                - generic [ref=e651]:
+                                  - generic [ref=e652]: file1.jpg
+                                  - generic [ref=e653]: 33B
+                                - generic [ref=e654]:
+                                  - generic [ref=e655]: 100%
+                                  - img [ref=e657]
+                                - progressbar "file1.jpg 33B" [ref=e659]
+                            - button "Remove from list" [ref=e662] [cursor=pointer]:
+                              - img [ref=e664]
+                          - listitem [ref=e666]:
+                            - img [ref=e668]
+                            - generic [ref=e670]:
+                              - generic [ref=e671]: Progress value is 100%.
+                              - generic [ref=e672]:
+                                - generic [ref=e674]:
+                                  - generic [ref=e675]: file2.jpg
+                                  - generic [ref=e676]: 12B
+                                - generic [ref=e677]:
+                                  - generic [ref=e678]: 100%
+                                  - img [ref=e680]
+                                - progressbar "file2.jpg 12B" [ref=e682]
+                            - button "Remove from list" [ref=e685] [cursor=pointer]:
+                              - img [ref=e687]
+                  - generic [ref=e689]:
+                    - checkbox "Show as horizontal" [ref=e690] [cursor=pointer]
+                    - generic [ref=e691] [cursor=pointer]: Show as horizontal
+                  - generic [ref=e692]:
+                    - checkbox "Demonstrate error reporting by forcing uploads to fail" [ref=e693] [cursor=pointer]
+                    - generic [ref=e694] [cursor=pointer]: Demonstrate error reporting by forcing uploads to fail
+                - generic [ref=e699]:
+                  - button "Toggle TS code in Basic example" [ref=e701] [cursor=pointer]:
+                    - generic [ref=e702]:
+                      - img [ref=e703]
+                      - text: TS
+                  - button "Copy Basic example code to clipboard" [ref=e706] [cursor=pointer]:
+                    - img [ref=e708]
+                  - form "Open Basic example in CodeSandbox form" [ref=e710]:
+                    - button "Open Basic example in CodeSandbox" [ref=e712] [cursor=pointer]:
+                      - img [ref=e714]
+                  - link "Open Basic example in new window" [ref=e717] [cursor=pointer]:
+                    - /url: /components/file-upload/multiple-file-upload/react/basic
+                    - img [ref=e719]
+              - heading "Types" [level=2] [ref=e723]:
+                - button [ref=e725] [cursor=pointer]:
+                  - img [ref=e726]
+                - text: Types
+              - paragraph [ref=e728]:
+                - text: Multiple file upload uses the
+                - code [ref=e729]: DropzoneOptions
+                - text: type from react-dropzone. It is comprised of additional props with their own types. For more information on using
+                - code [ref=e730]: DropzoneOptions
+                - text: visit
+                - link "react-dropzone props and methods" [ref=e731] [cursor=pointer]:
+                  - /url: https://react-dropzone.js.org/#src
+                - text: .
+              - paragraph [ref=e732]:
+                - text: Additionally, it calls the
+                - code [ref=e733]: onFileDrop
+                - text: callback with an event of type
+                - code [ref=e734]: DropEvent
+                - text: .
+                - code [ref=e735]: DropEvent
+                - text: "is a union comprised of the following types:"
+              - code [ref=e739]: React.DragEvent<HTMLElement> | React.ChangeEvent<HTMLInputElement> | DragEvent | Event
+              - generic [ref=e740]:
+                - heading "Props" [level=2] [ref=e743]:
+                  - button [ref=e745] [cursor=pointer]:
+                    - img [ref=e746]
+                  - text: Props
+                - heading "MultipleFileUpload" [level=3] [ref=e750]:
+                  - button [ref=e752] [cursor=pointer]:
+                    - img [ref=e753]
+                  - text: MultipleFileUpload
+                - grid "MultipleFileUpload" [ref=e755]:
+                  - caption [ref=e756]:
+                    - generic [ref=e757]: Acts as a container for all other MultipleFileUpload sub-components. This sub-component also provides the functionality for file uploads, and access to the uploaded files via a callback.
+                    - generic [ref=e758]: "*required"
+                  - rowgroup [ref=e759]:
+                    - row "Name Type Default Description" [ref=e760]:
+                      - columnheader "Name" [ref=e761]
+                      - columnheader "Type" [ref=e762]
+                      - columnheader "Default" [ref=e763]
+                      - columnheader "Description" [ref=e764]
+                  - rowgroup [ref=e765]:
+                    - row "children React.ReactNode Content rendered inside the multi upload field" [ref=e766]:
+                      - gridcell "children" [ref=e767]:
+                        - generic [ref=e768]: children
+                      - gridcell "React.ReactNode" [ref=e769]:
+                        - generic [ref=e770]: React.ReactNode
+                      - gridcell [ref=e771]
+                      - gridcell "Content rendered inside the multi upload field" [ref=e772]:
+                        - generic [ref=e773]: Content rendered inside the multi upload field
+                    - row "className string Class to add to outer div" [ref=e774]:
+                      - gridcell "className" [ref=e775]:
+                        - generic [ref=e776]: className
+                      - gridcell "string" [ref=e777]:
+                        - generic [ref=e778]: string
+                      - gridcell [ref=e779]
+                      - gridcell "Class to add to outer div" [ref=e780]:
+                        - generic [ref=e781]: Class to add to outer div
+                    - 'row "dropzoneProps DropzoneOptions {} Optional extra props to customize react-dropzone." [ref=e782]':
+                      - gridcell "dropzoneProps" [ref=e783]:
+                        - generic [ref=e784]: dropzoneProps
+                      - gridcell "DropzoneOptions" [ref=e785]:
+                        - generic [ref=e786]: DropzoneOptions
+                      - 'gridcell "{}" [ref=e787]':
+                        - generic [ref=e788]: "{}"
+                      - gridcell "Optional extra props to customize react-dropzone." [ref=e789]:
+                        - generic [ref=e790]: Optional extra props to customize react-dropzone.
+                    - row "isHorizontal boolean Flag setting the component to horizontal styling mode" [ref=e791]:
+                      - gridcell "isHorizontal" [ref=e792]:
+                        - generic [ref=e793]: isHorizontal
+                      - gridcell "boolean" [ref=e794]:
+                        - generic [ref=e795]: boolean
+                      - gridcell [ref=e796]
+                      - gridcell "Flag setting the component to horizontal styling mode" [ref=e797]:
+                        - generic [ref=e798]: Flag setting the component to horizontal styling mode
+                    - 'row "onFileDrop (event: DropEvent, data: File[]) => void () => {} When files are dropped or uploaded this callback will be called with all accepted files" [ref=e799]':
+                      - gridcell "onFileDrop" [ref=e800]:
+                        - generic [ref=e801]: onFileDrop
+                      - 'gridcell "(event: DropEvent, data: File[]) => void" [ref=e802]':
+                        - generic [ref=e803]: "(event: DropEvent, data: File[]) => void"
+                      - 'gridcell "() => {}" [ref=e804]':
+                        - generic [ref=e805]: "() => {}"
+                      - gridcell "When files are dropped or uploaded this callback will be called with all accepted files" [ref=e806]:
+                        - generic [ref=e807]: When files are dropped or uploaded this callback will be called with all accepted files
+                - heading "MultipleFileUploadMain" [level=3] [ref=e810]:
+                  - button [ref=e812] [cursor=pointer]:
+                    - img [ref=e813]
+                  - text: MultipleFileUploadMain
+                - grid "MultipleFileUploadMain" [ref=e815]:
+                  - caption [ref=e816]:
+                    - generic [ref=e817]: Creates the visual upload interface, including the area to drag and drop files, an optional upload button, and descriptive instructions.
+                    - generic [ref=e818]: "*required"
+                  - rowgroup [ref=e819]:
+                    - row "Name Type Default Description" [ref=e820]:
+                      - columnheader "Name" [ref=e821]
+                      - columnheader "Type" [ref=e822]
+                      - columnheader "Default" [ref=e823]
+                      - columnheader "Description" [ref=e824]
+                  - rowgroup [ref=e825]:
+                    - row "browseButtonText string 'Upload' Visible text label for the upload button" [ref=e826]:
+                      - gridcell "browseButtonText" [ref=e827]:
+                        - generic [ref=e828]: browseButtonText
+                      - gridcell "string" [ref=e829]:
+                        - generic [ref=e830]: string
+                      - gridcell "'Upload'" [ref=e831]:
+                        - generic [ref=e832]: "'Upload'"
+                      - gridcell "Visible text label for the upload button" [ref=e833]:
+                        - generic [ref=e834]: Visible text label for the upload button
+                    - row "className string Class to add to outer div" [ref=e835]:
+                      - gridcell "className" [ref=e836]:
+                        - generic [ref=e837]: className
+                      - gridcell "string" [ref=e838]:
+                        - generic [ref=e839]: string
+                      - gridcell [ref=e840]
+                      - gridcell "Class to add to outer div" [ref=e841]:
+                        - generic [ref=e842]: Class to add to outer div
+                    - row "infoText React.ReactNode Content rendered inside the info div" [ref=e843]:
+                      - gridcell "infoText" [ref=e844]:
+                        - generic [ref=e845]: infoText
+                      - gridcell "React.ReactNode" [ref=e846]:
+                        - generic [ref=e847]: React.ReactNode
+                      - gridcell [ref=e848]
+                      - gridcell "Content rendered inside the info div" [ref=e849]:
+                        - generic [ref=e850]: Content rendered inside the info div
+                    - row "isUploadButtonHidden boolean Flag to prevent the upload button from being rendered" [ref=e851]:
+                      - gridcell "isUploadButtonHidden" [ref=e852]:
+                        - generic [ref=e853]: isUploadButtonHidden
+                      - gridcell "boolean" [ref=e854]:
+                        - generic [ref=e855]: boolean
+                      - gridcell [ref=e856]
+                      - gridcell "Flag to prevent the upload button from being rendered" [ref=e857]:
+                        - generic [ref=e858]: Flag to prevent the upload button from being rendered
+                    - row "titleIcon React.ReactNode Content rendered inside the title icon div" [ref=e859]:
+                      - gridcell "titleIcon" [ref=e860]:
+                        - generic [ref=e861]: titleIcon
+                      - gridcell "React.ReactNode" [ref=e862]:
+                        - generic [ref=e863]: React.ReactNode
+                      - gridcell [ref=e864]
+                      - gridcell "Content rendered inside the title icon div" [ref=e865]:
+                        - generic [ref=e866]: Content rendered inside the title icon div
+                    - row "titleText React.ReactNode Content rendered inside the title text div" [ref=e867]:
+                      - gridcell "titleText" [ref=e868]:
+                        - generic [ref=e869]: titleText
+                      - gridcell "React.ReactNode" [ref=e870]:
+                        - generic [ref=e871]: React.ReactNode
+                      - gridcell [ref=e872]
+                      - gridcell "Content rendered inside the title text div" [ref=e873]:
+                        - generic [ref=e874]: Content rendered inside the title text div
+                    - row "titleTextSeparator React.ReactNode Content rendered inside the title text separator div" [ref=e875]:
+                      - gridcell "titleTextSeparator" [ref=e876]:
+                        - generic [ref=e877]: titleTextSeparator
+                      - gridcell "React.ReactNode" [ref=e878]:
+                        - generic [ref=e879]: React.ReactNode
+                      - gridcell [ref=e880]
+                      - gridcell "Content rendered inside the title text separator div" [ref=e881]:
+                        - generic [ref=e882]: Content rendered inside the title text separator div
+                - heading "MultipleFileUploadStatus" [level=3] [ref=e885]:
+                  - button [ref=e887] [cursor=pointer]:
+                    - img [ref=e888]
+                  - text: MultipleFileUploadStatus
+                - grid "MultipleFileUploadStatus" [ref=e890]:
+                  - caption [ref=e891]:
+                    - generic [ref=e892]: Acts as an expandable container for all uploaded file statuses. An optional text and/or icon can also be passed into this sub-component. This sub-component can be conditionally rendered when at least 1 file has been attempted to be uploaded.
+                    - generic [ref=e893]: "*required"
+                  - rowgroup [ref=e894]:
+                    - row "Name Type Default Description" [ref=e895]:
+                      - columnheader "Name" [ref=e896]
+                      - columnheader "Type" [ref=e897]
+                      - columnheader "Default" [ref=e898]
+                      - columnheader "Description" [ref=e899]
+                  - rowgroup [ref=e900]:
+                    - row "aria-label string Adds an accessible label to the list of status items." [ref=e901]:
+                      - gridcell "aria-label" [ref=e902]:
+                        - generic [ref=e903]: aria-label
+                      - gridcell "string" [ref=e904]:
+                        - generic [ref=e905]: string
+                      - gridcell [ref=e906]
+                      - gridcell "Adds an accessible label to the list of status items." [ref=e907]:
+                        - generic [ref=e908]: Adds an accessible label to the list of status items.
+                    - row "children React.ReactNode Content rendered inside multi file upload status list" [ref=e909]:
+                      - gridcell "children" [ref=e910]:
+                        - generic [ref=e911]: children
+                      - gridcell "React.ReactNode" [ref=e912]:
+                        - generic [ref=e913]: React.ReactNode
+                      - gridcell [ref=e914]
+                      - gridcell "Content rendered inside multi file upload status list" [ref=e915]:
+                        - generic [ref=e916]: Content rendered inside multi file upload status list
+                    - row "className string Class to add to outer div" [ref=e917]:
+                      - gridcell "className" [ref=e918]:
+                        - generic [ref=e919]: className
+                      - gridcell "string" [ref=e920]:
+                        - generic [ref=e921]: string
+                      - gridcell [ref=e922]
+                      - gridcell "Class to add to outer div" [ref=e923]:
+                        - generic [ref=e924]: Class to add to outer div
+                    - row "statusToggleIcon 'danger' | 'success' | 'inProgress' | React.ReactNode Icon to show in the status toggle" [ref=e925]:
+                      - gridcell "statusToggleIcon" [ref=e926]:
+                        - generic [ref=e927]: statusToggleIcon
+                      - gridcell "'danger' | 'success' | 'inProgress' | React.ReactNode" [ref=e928]:
+                        - generic [ref=e929]: "'danger' | 'success' | 'inProgress' | React.ReactNode"
+                      - gridcell [ref=e930]
+                      - gridcell "Icon to show in the status toggle" [ref=e931]:
+                        - generic [ref=e932]: Icon to show in the status toggle
+                    - row "statusToggleText string String to show in the status toggle" [ref=e933]:
+                      - gridcell "statusToggleText" [ref=e934]:
+                        - generic [ref=e935]: statusToggleText
+                      - gridcell "string" [ref=e936]:
+                        - generic [ref=e937]: string
+                      - gridcell [ref=e938]
+                      - gridcell "String to show in the status toggle" [ref=e939]:
+                        - generic [ref=e940]: String to show in the status toggle
+                - heading "MultipleFileUploadStatusItem" [level=3] [ref=e943]:
+                  - button [ref=e945] [cursor=pointer]:
+                    - img [ref=e946]
+                  - text: MultipleFileUploadStatusItem
+                - grid "MultipleFileUploadStatusItem" [ref=e948]:
+                  - caption [ref=e949]:
+                    - generic [ref=e950]: Automatically reads an uploaded file to render a visual representation of it, including its name, size, and read status. This sub-component also allows custom reading of files via various callbacks which will override the automatic reading behavior.
+                    - generic [ref=e951]: "*required"
+                  - rowgroup [ref=e952]:
+                    - row "Name Type Default Description" [ref=e953]:
+                      - columnheader "Name" [ref=e954]
+                      - columnheader "Type" [ref=e955]
+                      - columnheader "Default" [ref=e956]
+                      - columnheader "Description" [ref=e957]
+                  - rowgroup [ref=e958]:
+                    - row "buttonAriaLabel string 'Remove from list' Adds accessibility text to the status item deletion button" [ref=e959]:
+                      - gridcell "buttonAriaLabel" [ref=e960]:
+                        - generic [ref=e961]: buttonAriaLabel
+                      - gridcell "string" [ref=e962]:
+                        - generic [ref=e963]: string
+                      - gridcell "'Remove from list'" [ref=e964]:
+                        - generic [ref=e965]: "'Remove from list'"
+                      - gridcell "Adds accessibility text to the status item deletion button" [ref=e966]:
+                        - generic [ref=e967]: Adds accessibility text to the status item deletion button
+                    - row "className string Class to add to outer div" [ref=e968]:
+                      - gridcell "className" [ref=e969]:
+                        - generic [ref=e970]: className
+                      - gridcell "string" [ref=e971]:
+                        - generic [ref=e972]: string
+                      - gridcell [ref=e973]
+                      - gridcell "Class to add to outer div" [ref=e974]:
+                        - generic [ref=e975]: Class to add to outer div
+                    - 'row "customFileHandler (file: File) => void A callback to process file reading in a custom way" [ref=e976]':
+                      - gridcell "customFileHandler" [ref=e977]:
+                        - generic [ref=e978]: customFileHandler
+                      - 'gridcell "(file: File) => void" [ref=e979]':
+                        - generic [ref=e980]: "(file: File) => void"
+                      - gridcell [ref=e981]
+                      - gridcell "A callback to process file reading in a custom way" [ref=e982]:
+                        - generic [ref=e983]: A callback to process file reading in a custom way
+                    - row "file File The file object being represented by the status item" [ref=e984]:
+                      - gridcell "file" [ref=e985]:
+                        - generic [ref=e986]: file
+                      - gridcell "File" [ref=e987]:
+                        - generic [ref=e988]: File
+                      - gridcell [ref=e989]
+                      - gridcell "The file object being represented by the status item" [ref=e990]:
+                        - generic [ref=e991]: The file object being represented by the status item
+                    - row "fileIcon React.ReactNode A custom icon to show in place of the generic file icon" [ref=e992]:
+                      - gridcell "fileIcon" [ref=e993]:
+                        - generic [ref=e994]: fileIcon
+                      - gridcell "React.ReactNode" [ref=e995]:
+                        - generic [ref=e996]: React.ReactNode
+                      - gridcell [ref=e997]
+                      - gridcell "A custom icon to show in place of the generic file icon" [ref=e998]:
+                        - generic [ref=e999]: A custom icon to show in place of the generic file icon
+                    - row "fileName string A custom name to display for the file rather than using built in functionality to auto-fill it" [ref=e1000]:
+                      - gridcell "fileName" [ref=e1001]:
+                        - generic [ref=e1002]: fileName
+                      - gridcell "string" [ref=e1003]:
+                        - generic [ref=e1004]: string
+                      - gridcell [ref=e1005]
+                      - gridcell "A custom name to display for the file rather than using built in functionality to auto-fill it" [ref=e1006]:
+                        - generic [ref=e1007]: A custom name to display for the file rather than using built in functionality to auto-fill it
+                    - row "fileSize number A custom file size to display for the file rather than using built in functionality to auto-fill it" [ref=e1008]:
+                      - gridcell "fileSize" [ref=e1009]:
+                        - generic [ref=e1010]: fileSize
+                      - gridcell "number" [ref=e1011]:
+                        - generic [ref=e1012]: number
+                      - gridcell [ref=e1013]
+                      - gridcell "A custom file size to display for the file rather than using built in functionality to auto-fill it" [ref=e1014]:
+                        - generic [ref=e1015]: A custom file size to display for the file rather than using built in functionality to auto-fill it
+                    - 'row "onClearClick React.MouseEventHandler<HTMLButtonElement> () => {} Clear button was clicked" [ref=e1016]':
+                      - gridcell "onClearClick" [ref=e1017]:
+                        - generic [ref=e1018]: onClearClick
+                      - gridcell "React.MouseEventHandler<HTMLButtonElement>" [ref=e1019]:
+                        - generic [ref=e1020]: React.MouseEventHandler<HTMLButtonElement>
+                      - 'gridcell "() => {}" [ref=e1021]':
+                        - generic [ref=e1022]: "() => {}"
+                      - gridcell "Clear button was clicked" [ref=e1023]:
+                        - generic [ref=e1024]: Clear button was clicked
+                    - 'row "onReadFail (error: DOMException, onReadFail: File) => void () => {} A callback for when the FileReader API fails" [ref=e1025]':
+                      - gridcell "onReadFail" [ref=e1026]:
+                        - generic [ref=e1027]: onReadFail
+                      - 'gridcell "(error: DOMException, onReadFail: File) => void" [ref=e1028]':
+                        - generic [ref=e1029]: "(error: DOMException, onReadFail: File) => void"
+                      - 'gridcell "() => {}" [ref=e1030]':
+                        - generic [ref=e1031]: "() => {}"
+                      - gridcell "A callback for when the FileReader API fails" [ref=e1032]:
+                        - generic [ref=e1033]: A callback for when the FileReader API fails
+                    - 'row "onReadFinished (fileHandle: File) => void () => {} A callback for when a selected file finishes loading" [ref=e1034]':
+                      - gridcell "onReadFinished" [ref=e1035]:
+                        - generic [ref=e1036]: onReadFinished
+                      - 'gridcell "(fileHandle: File) => void" [ref=e1037]':
+                        - generic [ref=e1038]: "(fileHandle: File) => void"
+                      - 'gridcell "() => {}" [ref=e1039]':
+                        - generic [ref=e1040]: "() => {}"
+                      - gridcell "A callback for when a selected file finishes loading" [ref=e1041]:
+                        - generic [ref=e1042]: A callback for when a selected file finishes loading
+                    - 'row "onReadStarted (fileHandle: File) => void () => {} A callback for when a selected file starts loading" [ref=e1043]':
+                      - gridcell "onReadStarted" [ref=e1044]:
+                        - generic [ref=e1045]: onReadStarted
+                      - 'gridcell "(fileHandle: File) => void" [ref=e1046]':
+                        - generic [ref=e1047]: "(fileHandle: File) => void"
+                      - 'gridcell "() => {}" [ref=e1048]':
+                        - generic [ref=e1049]: "() => {}"
+                      - gridcell "A callback for when a selected file starts loading" [ref=e1050]:
+                        - generic [ref=e1051]: A callback for when a selected file starts loading
+                    - 'row "onReadSuccess (data: string, file: File) => void () => {} A callback for when the FileReader successfully reads the file" [ref=e1052]':
+                      - gridcell "onReadSuccess" [ref=e1053]:
+                        - generic [ref=e1054]: onReadSuccess
+                      - 'gridcell "(data: string, file: File) => void" [ref=e1055]':
+                        - generic [ref=e1056]: "(data: string, file: File) => void"
+                      - 'gridcell "() => {}" [ref=e1057]':
+                        - generic [ref=e1058]: "() => {}"
+                      - gridcell "A callback for when the FileReader successfully reads the file" [ref=e1059]:
+                        - generic [ref=e1060]: A callback for when the FileReader successfully reads the file
+                    - row "progressAriaDescribedBy string Adds an accessible description to the ProgressBar via space separated list of ids. Required when helperText is passed in." [ref=e1061]:
+                      - gridcell "progressAriaDescribedBy" [ref=e1062]:
+                        - generic [ref=e1063]: progressAriaDescribedBy
+                      - gridcell "string" [ref=e1064]:
+                        - generic [ref=e1065]: string
+                      - gridcell [ref=e1066]
+                      - gridcell "Adds an accessible description to the ProgressBar via space separated list of ids. Required when helperText is passed in." [ref=e1067]:
+                        - generic [ref=e1068]: Adds an accessible description to the ProgressBar via space separated list of ids. Required when helperText is passed in.
+                    - row "progressAriaLabel string Adds accessible text to the progress bar. Required when title not used and there is not any label associated with the progress bar" [ref=e1069]:
+                      - gridcell "progressAriaLabel" [ref=e1070]:
+                        - generic [ref=e1071]: progressAriaLabel
+                      - gridcell "string" [ref=e1072]:
+                        - generic [ref=e1073]: string
+                      - gridcell [ref=e1074]
+                      - gridcell "Adds accessible text to the progress bar. Required when title not used and there is not any label associated with the progress bar" [ref=e1075]:
+                        - generic [ref=e1076]: Adds accessible text to the progress bar. Required when title not used and there is not any label associated with the progress bar
+                    - row "progressAriaLabelledBy string Associates the progress bar with it's label for accessibility purposes. Required when title not used" [ref=e1077]:
+                      - gridcell "progressAriaLabelledBy" [ref=e1078]:
+                        - generic [ref=e1079]: progressAriaLabelledBy
+                      - gridcell "string" [ref=e1080]:
+                        - generic [ref=e1081]: string
+                      - gridcell [ref=e1082]
+                      - gridcell "Associates the progress bar with it's label for accessibility purposes. Required when title not used" [ref=e1083]:
+                        - generic [ref=e1084]: Associates the progress bar with it's label for accessibility purposes. Required when title not used
+                    - 'row "progressAriaLiveMessage string | ((loadPercentage: number) => string) Modifies the text announced by assistive technologies when the progress bar updates." [ref=e1085]':
+                      - gridcell "progressAriaLiveMessage" [ref=e1086]:
+                        - generic [ref=e1087]: progressAriaLiveMessage
+                      - 'gridcell "string | ((loadPercentage: number) => string)" [ref=e1088]':
+                        - generic [ref=e1089]: "string | ((loadPercentage: number) => string)"
+                      - gridcell [ref=e1090]
+                      - gridcell "Modifies the text announced by assistive technologies when the progress bar updates." [ref=e1091]:
+                        - generic [ref=e1092]: Modifies the text announced by assistive technologies when the progress bar updates.
+                    - row "progressHelperText React.ReactNode Additional content related to the status item." [ref=e1093]:
+                      - gridcell "progressHelperText" [ref=e1094]:
+                        - generic [ref=e1095]: progressHelperText
+                      - gridcell "React.ReactNode" [ref=e1096]:
+                        - generic [ref=e1097]: React.ReactNode
+                      - gridcell [ref=e1098]
+                      - gridcell "Additional content related to the status item." [ref=e1099]:
+                        - generic [ref=e1100]: Additional content related to the status item.
+                    - row "progressId string Unique identifier for progress. Generated if not specified." [ref=e1101]:
+                      - gridcell "progressId" [ref=e1102]:
+                        - generic [ref=e1103]: progressId
+                      - gridcell "string" [ref=e1104]:
+                        - generic [ref=e1105]: string
+                      - gridcell [ref=e1106]
+                      - gridcell "Unique identifier for progress. Generated if not specified." [ref=e1107]:
+                        - generic [ref=e1108]: Unique identifier for progress. Generated if not specified.
+                    - row "progressValue number A custom value to display for the progress component rather than using built in functionality to auto-fill it" [ref=e1109]:
+                      - gridcell "progressValue" [ref=e1110]:
+                        - generic [ref=e1111]: progressValue
+                      - gridcell "number" [ref=e1112]:
+                        - generic [ref=e1113]: number
+                      - gridcell [ref=e1114]
+                      - gridcell "A custom value to display for the progress component rather than using built in functionality to auto-fill it" [ref=e1115]:
+                        - generic [ref=e1116]: A custom value to display for the progress component rather than using built in functionality to auto-fill it
+                    - row "progressVariant 'danger' | 'success' | 'warning' A custom variant to apply to the progress component rather than using built in functionality to auto-fill it" [ref=e1117]:
+                      - gridcell "progressVariant" [ref=e1118]:
+                        - generic [ref=e1119]: progressVariant
+                      - gridcell "'danger' | 'success' | 'warning'" [ref=e1120]:
+                        - generic [ref=e1121]: "'danger' | 'success' | 'warning'"
+                      - gridcell [ref=e1122]
+                      - gridcell "A custom variant to apply to the progress component rather than using built in functionality to auto-fill it" [ref=e1123]:
+                        - generic [ref=e1124]: A custom variant to apply to the progress component rather than using built in functionality to auto-fill it
+              - generic [ref=e1125]:
+                - heading "CSS variables" [level=2] [ref=e1128]:
+                  - button [ref=e1130] [cursor=pointer]:
+                    - img [ref=e1131]
+                  - text: CSS variables
+                - generic [ref=e1135]:
+                  - img [ref=e1137]
+                  - textbox "Filter CSS Variables" [ref=e1139]
+                - grid "CSS Variables prefixed with pf-v6-c-multiple-file-upload" [ref=e1140]:
+                  - rowgroup [ref=e1141]:
+                    - row "Expand or collapse column Selector Variable Value" [ref=e1142]:
+                      - columnheader "Expand or collapse column" [ref=e1143]:
+                        - generic [ref=e1144]: Expand or collapse column
+                      - columnheader "Selector" [ref=e1145]
+                      - columnheader "Variable" [ref=e1146]
+                      - columnheader "Value" [ref=e1147]
+                  - rowgroup [ref=e1148]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--GridTemplateColumns 1fr" [ref=e1149]:
+                      - gridcell [ref=e1150]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1151]
+                      - gridcell "--pf-v6-c-multiple-file-upload--GridTemplateColumns" [ref=e1152]
+                      - gridcell "1fr" [ref=e1153]:
+                        - generic [ref=e1156]: 1fr
+                  - rowgroup [ref=e1157]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--Gap 1rem" [ref=e1158]:
+                      - gridcell "Details" [ref=e1159]:
+                        - button "Details" [ref=e1160] [cursor=pointer]:
+                          - generic [ref=e1162]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1163]
+                      - gridcell "--pf-v6-c-multiple-file-upload--Gap" [ref=e1164]
+                      - gridcell "1rem" [ref=e1165]:
+                        - generic [ref=e1168]: 1rem
+                  - rowgroup [ref=e1169]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--TextAlign center" [ref=e1170]:
+                      - gridcell [ref=e1171]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1172]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--TextAlign" [ref=e1173]
+                      - gridcell "center" [ref=e1174]:
+                        - generic [ref=e1177]: center
+                  - rowgroup [ref=e1178]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--GridTemplateColumns auto" [ref=e1179]:
+                      - gridcell [ref=e1180]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1181]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--GridTemplateColumns" [ref=e1182]
+                      - gridcell "auto" [ref=e1183]:
+                        - generic [ref=e1186]: auto
+                  - rowgroup [ref=e1187]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--GridTemplateRows auto" [ref=e1188]:
+                      - gridcell [ref=e1189]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1190]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--GridTemplateRows" [ref=e1191]
+                      - gridcell "auto" [ref=e1192]:
+                        - generic [ref=e1195]: auto
+                  - rowgroup [ref=e1196]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--GridTemplateAreas \"title\" \"upload\" \"info\"" [ref=e1197]:
+                      - gridcell [ref=e1198]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1199]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--GridTemplateAreas" [ref=e1200]
+                      - gridcell "\"title\" \"upload\" \"info\"" [ref=e1201]:
+                        - generic [ref=e1204]: "\"title\" \"upload\" \"info\""
+                  - rowgroup [ref=e1205]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--PaddingBlockStart 2rem" [ref=e1206]:
+                      - gridcell "Details" [ref=e1207]:
+                        - button "Details" [ref=e1208] [cursor=pointer]:
+                          - generic [ref=e1210]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1211]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--PaddingBlockStart" [ref=e1212]
+                      - gridcell "2rem" [ref=e1213]:
+                        - generic [ref=e1216]: 2rem
+                  - rowgroup [ref=e1217]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--PaddingInlineEnd 2rem" [ref=e1218]:
+                      - gridcell "Details" [ref=e1219]:
+                        - button "Details" [ref=e1220] [cursor=pointer]:
+                          - generic [ref=e1222]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1223]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--PaddingInlineEnd" [ref=e1224]
+                      - gridcell "2rem" [ref=e1225]:
+                        - generic [ref=e1228]: 2rem
+                  - rowgroup [ref=e1229]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--PaddingBlockEnd 2rem" [ref=e1230]:
+                      - gridcell "Details" [ref=e1231]:
+                        - button "Details" [ref=e1232] [cursor=pointer]:
+                          - generic [ref=e1234]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1235]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--PaddingBlockEnd" [ref=e1236]
+                      - gridcell "2rem" [ref=e1237]:
+                        - generic [ref=e1240]: 2rem
+                  - rowgroup [ref=e1241]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--PaddingInlineStart 2rem" [ref=e1242]:
+                      - gridcell "Details" [ref=e1243]:
+                        - button "Details" [ref=e1244] [cursor=pointer]:
+                          - generic [ref=e1246]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1247]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--PaddingInlineStart" [ref=e1248]
+                      - gridcell "2rem" [ref=e1249]:
+                        - generic [ref=e1252]: 2rem
+                  - rowgroup [ref=e1253]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--BorderWidth 1px" [ref=e1254]:
+                      - gridcell "Details" [ref=e1255]:
+                        - button "Details" [ref=e1256] [cursor=pointer]:
+                          - generic [ref=e1258]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1259]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--BorderWidth" [ref=e1260]
+                      - gridcell "1px" [ref=e1261]:
+                        - generic [ref=e1264]: 1px
+                  - rowgroup [ref=e1265]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--BorderStyle dashed" [ref=e1266]:
+                      - gridcell [ref=e1267]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1268]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--BorderStyle" [ref=e1269]
+                      - gridcell "dashed" [ref=e1270]:
+                        - generic [ref=e1273]: dashed
+                  - rowgroup [ref=e1274]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--BorderColor (In light theme) #c7c7c7" [ref=e1275]':
+                      - gridcell "Details" [ref=e1276]:
+                        - button "Details" [ref=e1277] [cursor=pointer]:
+                          - generic [ref=e1279]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1280]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--BorderColor" [ref=e1281]
+                      - 'gridcell "(In light theme) #c7c7c7" [ref=e1282]':
+                        - generic [ref=e1287]: "(In light theme) #c7c7c7"
+                  - rowgroup [ref=e1288]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__main--BorderRadius 16px" [ref=e1289]:
+                      - gridcell "Details" [ref=e1290]:
+                        - button "Details" [ref=e1291] [cursor=pointer]:
+                          - generic [ref=e1293]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1294]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--BorderRadius" [ref=e1295]
+                      - gridcell "16px" [ref=e1296]:
+                        - generic [ref=e1299]: 16px
+                  - rowgroup [ref=e1300]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title--Display grid" [ref=e1301]:
+                      - gridcell [ref=e1302]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1303]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title--Display" [ref=e1304]
+                      - gridcell "grid" [ref=e1305]:
+                        - generic [ref=e1308]: grid
+                  - rowgroup [ref=e1309]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title--GridTemplateColumns auto" [ref=e1310]:
+                      - gridcell [ref=e1311]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1312]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title--GridTemplateColumns" [ref=e1313]
+                      - gridcell "auto" [ref=e1314]:
+                        - generic [ref=e1317]: auto
+                  - rowgroup [ref=e1318]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title--Gap 1.5rem" [ref=e1319]:
+                      - gridcell "Details" [ref=e1320]:
+                        - button "Details" [ref=e1321] [cursor=pointer]:
+                          - generic [ref=e1323]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1324]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title--Gap" [ref=e1325]
+                      - gridcell "1.5rem" [ref=e1326]:
+                        - generic [ref=e1329]: 1.5rem
+                  - rowgroup [ref=e1330]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text--Color (In light theme) #151515" [ref=e1331]':
+                      - gridcell "Details" [ref=e1332]:
+                        - button "Details" [ref=e1333] [cursor=pointer]:
+                          - generic [ref=e1335]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1336]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text--Color" [ref=e1337]
+                      - 'gridcell "(In light theme) #151515" [ref=e1338]':
+                        - generic [ref=e1343]: "(In light theme) #151515"
+                  - rowgroup [ref=e1344]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text--FontFamily \"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif" [ref=e1345]:
+                      - gridcell "Details" [ref=e1346]:
+                        - button "Details" [ref=e1347] [cursor=pointer]:
+                          - generic [ref=e1349]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1350]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text--FontFamily" [ref=e1351]
+                      - gridcell "\"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif" [ref=e1352]:
+                        - generic [ref=e1355]: "\"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif"
+                  - rowgroup [ref=e1356]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text--FontSize 1.125rem" [ref=e1357]:
+                      - gridcell "Details" [ref=e1358]:
+                        - button "Details" [ref=e1359] [cursor=pointer]:
+                          - generic [ref=e1361]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1362]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text--FontSize" [ref=e1363]
+                      - gridcell "1.125rem" [ref=e1364]:
+                        - generic [ref=e1367]: 1.125rem
+                  - rowgroup [ref=e1368]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text--FontWeight 500" [ref=e1369]:
+                      - gridcell "Details" [ref=e1370]:
+                        - button "Details" [ref=e1371] [cursor=pointer]:
+                          - generic [ref=e1373]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1374]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text--FontWeight" [ref=e1375]
+                      - gridcell "500" [ref=e1376]:
+                        - generic [ref=e1379]: "500"
+                  - rowgroup [ref=e1380]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-icon--Color (In light theme) #1f1f1f" [ref=e1381]':
+                      - gridcell "Details" [ref=e1382]:
+                        - button "Details" [ref=e1383] [cursor=pointer]:
+                          - generic [ref=e1385]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1386]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-icon--Color" [ref=e1387]
+                      - 'gridcell "(In light theme) #1f1f1f" [ref=e1388]':
+                        - generic [ref=e1393]: "(In light theme) #1f1f1f"
+                  - rowgroup [ref=e1394]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-icon--FontSize 1.5rem" [ref=e1395]:
+                      - gridcell "Details" [ref=e1396]:
+                        - button "Details" [ref=e1397] [cursor=pointer]:
+                          - generic [ref=e1399]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1400]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-icon--FontSize" [ref=e1401]
+                      - gridcell "1.5rem" [ref=e1402]:
+                        - generic [ref=e1405]: 1.5rem
+                  - rowgroup [ref=e1406]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text-separator--Display block" [ref=e1407]:
+                      - gridcell [ref=e1408]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1409]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--Display" [ref=e1410]
+                      - gridcell "block" [ref=e1411]:
+                        - generic [ref=e1414]: block
+                  - rowgroup [ref=e1415]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text-separator--MarginBlockStart 0.5rem" [ref=e1416]:
+                      - gridcell "Details" [ref=e1417]:
+                        - button "Details" [ref=e1418] [cursor=pointer]:
+                          - generic [ref=e1420]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1421]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--MarginBlockStart" [ref=e1422]
+                      - gridcell "0.5rem" [ref=e1423]:
+                        - generic [ref=e1426]: 0.5rem
+                  - rowgroup [ref=e1427]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text-separator--MarginBlockEnd 0.5rem" [ref=e1428]:
+                      - gridcell "Details" [ref=e1429]:
+                        - button "Details" [ref=e1430] [cursor=pointer]:
+                          - generic [ref=e1432]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1433]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--MarginBlockEnd" [ref=e1434]
+                      - gridcell "0.5rem" [ref=e1435]:
+                        - generic [ref=e1438]: 0.5rem
+                  - rowgroup [ref=e1439]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text-separator--Color (In light theme) #151515" [ref=e1440]':
+                      - gridcell "Details" [ref=e1441]:
+                        - button "Details" [ref=e1442] [cursor=pointer]:
+                          - generic [ref=e1444]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1445]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--Color" [ref=e1446]
+                      - 'gridcell "(In light theme) #151515" [ref=e1447]':
+                        - generic [ref=e1452]: "(In light theme) #151515"
+                  - rowgroup [ref=e1453]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text-separator--FontFamily \"Red Hat Text\", \"RedHatText\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif" [ref=e1454]:
+                      - gridcell "Details" [ref=e1455]:
+                        - button "Details" [ref=e1456] [cursor=pointer]:
+                          - generic [ref=e1458]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1459]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--FontFamily" [ref=e1460]
+                      - gridcell "\"Red Hat Text\", \"RedHatText\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif" [ref=e1461]:
+                        - generic [ref=e1464]: "\"Red Hat Text\", \"RedHatText\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif"
+                  - rowgroup [ref=e1465]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text-separator--FontSize 1rem" [ref=e1466]:
+                      - gridcell "Details" [ref=e1467]:
+                        - button "Details" [ref=e1468] [cursor=pointer]:
+                          - generic [ref=e1470]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1471]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--FontSize" [ref=e1472]
+                      - gridcell "1rem" [ref=e1473]:
+                        - generic [ref=e1476]: 1rem
+                  - rowgroup [ref=e1477]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__title-text-separator--FontWeight 400" [ref=e1478]:
+                      - gridcell "Details" [ref=e1479]:
+                        - button "Details" [ref=e1480] [cursor=pointer]:
+                          - generic [ref=e1482]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1483]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--FontWeight" [ref=e1484]
+                      - gridcell "400" [ref=e1485]:
+                        - generic [ref=e1488]: "400"
+                  - rowgroup [ref=e1489]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__info--FontSize 0.875rem" [ref=e1490]:
+                      - gridcell "Details" [ref=e1491]:
+                        - button "Details" [ref=e1492] [cursor=pointer]:
+                          - generic [ref=e1494]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1495]
+                      - gridcell "--pf-v6-c-multiple-file-upload__info--FontSize" [ref=e1496]
+                      - gridcell "0.875rem" [ref=e1497]:
+                        - generic [ref=e1500]: 0.875rem
+                  - rowgroup [ref=e1501]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__info--Color (In light theme) #4d4d4d" [ref=e1502]':
+                      - gridcell "Details" [ref=e1503]:
+                        - button "Details" [ref=e1504] [cursor=pointer]:
+                          - generic [ref=e1506]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1507]
+                      - gridcell "--pf-v6-c-multiple-file-upload__info--Color" [ref=e1508]
+                      - 'gridcell "(In light theme) #4d4d4d" [ref=e1509]':
+                        - generic [ref=e1514]: "(In light theme) #4d4d4d"
+                  - rowgroup [ref=e1515]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__info--MarginBlockStart 1.5rem" [ref=e1516]:
+                      - gridcell "Details" [ref=e1517]:
+                        - button "Details" [ref=e1518] [cursor=pointer]:
+                          - generic [ref=e1520]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1521]
+                      - gridcell "--pf-v6-c-multiple-file-upload__info--MarginBlockStart" [ref=e1522]
+                      - gridcell "1.5rem" [ref=e1523]:
+                        - generic [ref=e1526]: 1.5rem
+                  - rowgroup [ref=e1527]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-drag-over__main--BorderStyle dashed" [ref=e1528]:
+                      - gridcell [ref=e1529]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1530]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-drag-over__main--BorderStyle" [ref=e1531]
+                      - gridcell "dashed" [ref=e1532]:
+                        - generic [ref=e1535]: dashed
+                  - rowgroup [ref=e1536]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-drag-over__main--BorderColor (In light theme) #0066cc" [ref=e1537]':
+                      - gridcell "Details" [ref=e1538]:
+                        - button "Details" [ref=e1539] [cursor=pointer]:
+                          - generic [ref=e1541]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1542]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-drag-over__main--BorderColor" [ref=e1543]
+                      - 'gridcell "(In light theme) #0066cc" [ref=e1544]':
+                        - generic [ref=e1549]: "(In light theme) #0066cc"
+                  - rowgroup [ref=e1550]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal--GridTemplateColumns fit-content(100%)" [ref=e1551]:
+                      - gridcell [ref=e1552]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1553]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal--GridTemplateColumns" [ref=e1554]
+                      - gridcell "fit-content(100%)" [ref=e1555]:
+                        - generic [ref=e1558]: fit-content(100%)
+                  - rowgroup [ref=e1559]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__main--TextAlign start" [ref=e1560]:
+                      - gridcell [ref=e1561]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1562]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__main--TextAlign" [ref=e1563]
+                      - gridcell "start" [ref=e1564]:
+                        - generic [ref=e1567]: start
+                  - rowgroup [ref=e1568]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__main--GridTemplateColumns 1fr auto" [ref=e1569]:
+                      - gridcell [ref=e1570]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1571]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__main--GridTemplateColumns" [ref=e1572]
+                      - gridcell "1fr auto" [ref=e1573]:
+                        - generic [ref=e1576]: 1fr auto
+                  - rowgroup [ref=e1577]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__main--GridTemplateAreas \"title upload\" \"info upload\"" [ref=e1578]:
+                      - gridcell [ref=e1579]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1580]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__main--GridTemplateAreas" [ref=e1581]
+                      - gridcell "\"title upload\" \"info upload\"" [ref=e1582]:
+                        - generic [ref=e1585]: "\"title upload\" \"info upload\""
+                  - rowgroup [ref=e1586]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__main--Gap 0.5rem 1.5rem" [ref=e1587]:
+                      - gridcell "Details" [ref=e1588]:
+                        - button "Details" [ref=e1589] [cursor=pointer]:
+                          - generic [ref=e1591]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1592]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__main--Gap" [ref=e1593]
+                      - gridcell "0.5rem 1.5rem" [ref=e1594]:
+                        - generic [ref=e1597]: 0.5rem 1.5rem
+                  - rowgroup [ref=e1598]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__main--PaddingBlockEnd 1.5rem" [ref=e1599]:
+                      - gridcell "Details" [ref=e1600]:
+                        - button "Details" [ref=e1601] [cursor=pointer]:
+                          - generic [ref=e1603]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1604]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__main--PaddingBlockEnd" [ref=e1605]
+                      - gridcell "1.5rem" [ref=e1606]:
+                        - generic [ref=e1609]: 1.5rem
+                  - rowgroup [ref=e1610]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title--GridTemplateColumns auto 1fr" [ref=e1611]:
+                      - gridcell [ref=e1612]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1613]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title--GridTemplateColumns" [ref=e1614]
+                      - gridcell "auto 1fr" [ref=e1615]:
+                        - generic [ref=e1618]: auto 1fr
+                  - rowgroup [ref=e1619]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title--Gap 0.5rem" [ref=e1620]:
+                      - gridcell "Details" [ref=e1621]:
+                        - button "Details" [ref=e1622] [cursor=pointer]:
+                          - generic [ref=e1624]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1625]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title--Gap" [ref=e1626]
+                      - gridcell "0.5rem" [ref=e1627]:
+                        - generic [ref=e1630]: 0.5rem
+                  - rowgroup [ref=e1631]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title-icon--FontSize 1rem" [ref=e1632]:
+                      - gridcell "Details" [ref=e1633]:
+                        - button "Details" [ref=e1634] [cursor=pointer]:
+                          - generic [ref=e1636]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1637]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title-icon--FontSize" [ref=e1638]
+                      - gridcell "1rem" [ref=e1639]:
+                        - generic [ref=e1642]: 1rem
+                  - rowgroup [ref=e1643]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title-text--FontSize 1rem" [ref=e1644]:
+                      - gridcell "Details" [ref=e1645]:
+                        - button "Details" [ref=e1646] [cursor=pointer]:
+                          - generic [ref=e1648]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1649]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title-text--FontSize" [ref=e1650]
+                      - gridcell "1rem" [ref=e1651]:
+                        - generic [ref=e1654]: 1rem
+                  - rowgroup [ref=e1655]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--Display inline" [ref=e1656]:
+                      - gridcell [ref=e1657]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1658]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--Display" [ref=e1659]
+                      - gridcell "inline" [ref=e1660]:
+                        - generic [ref=e1663]: inline
+                  - rowgroup [ref=e1664]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--MarginBlockStart 0" [ref=e1665]:
+                      - gridcell [ref=e1666]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1667]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--MarginBlockStart" [ref=e1668]
+                      - gridcell "0" [ref=e1669]:
+                        - generic [ref=e1672]: "0"
+                  - rowgroup [ref=e1673]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--FontFamily \"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif" [ref=e1674]:
+                      - gridcell "Details" [ref=e1675]:
+                        - button "Details" [ref=e1676] [cursor=pointer]:
+                          - generic [ref=e1678]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1679]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--FontFamily" [ref=e1680]
+                      - gridcell "\"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif" [ref=e1681]:
+                        - generic [ref=e1684]: "\"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif"
+                  - rowgroup [ref=e1685]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--FontSize 1rem" [ref=e1686]:
+                      - gridcell "Details" [ref=e1687]:
+                        - button "Details" [ref=e1688] [cursor=pointer]:
+                          - generic [ref=e1690]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1691]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--FontSize" [ref=e1692]
+                      - gridcell "1rem" [ref=e1693]:
+                        - generic [ref=e1696]: 1rem
+                  - rowgroup [ref=e1697]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--FontWeight 500" [ref=e1698]:
+                      - gridcell "Details" [ref=e1699]:
+                        - button "Details" [ref=e1700] [cursor=pointer]:
+                          - generic [ref=e1702]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1703]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__title-text-separator--FontWeight" [ref=e1704]
+                      - gridcell "500" [ref=e1705]:
+                        - generic [ref=e1708]: "500"
+                  - rowgroup [ref=e1709]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload--m-horizontal__info--MarginBlockStart 0" [ref=e1710]:
+                      - gridcell [ref=e1711]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1712]
+                      - gridcell "--pf-v6-c-multiple-file-upload--m-horizontal__info--MarginBlockStart" [ref=e1713]
+                      - gridcell "0" [ref=e1714]:
+                        - generic [ref=e1717]: "0"
+                  - rowgroup [ref=e1718]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status--PaddingBlockStart 0.5rem" [ref=e1719]:
+                      - gridcell "Details" [ref=e1720]:
+                        - button "Details" [ref=e1721] [cursor=pointer]:
+                          - generic [ref=e1723]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1724]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status--PaddingBlockStart" [ref=e1725]
+                      - gridcell "0.5rem" [ref=e1726]:
+                        - generic [ref=e1729]: 0.5rem
+                  - rowgroup [ref=e1730]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status--PaddingBlockEnd 0.5rem" [ref=e1731]:
+                      - gridcell "Details" [ref=e1732]:
+                        - button "Details" [ref=e1733] [cursor=pointer]:
+                          - generic [ref=e1735]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1736]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status--PaddingBlockEnd" [ref=e1737]
+                      - gridcell "0.5rem" [ref=e1738]:
+                        - generic [ref=e1741]: 0.5rem
+                  - rowgroup [ref=e1742]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status--PaddingInlineStart 1rem" [ref=e1743]:
+                      - gridcell "Details" [ref=e1744]:
+                        - button "Details" [ref=e1745] [cursor=pointer]:
+                          - generic [ref=e1747]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1748]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status--PaddingInlineStart" [ref=e1749]
+                      - gridcell "1rem" [ref=e1750]:
+                        - generic [ref=e1753]: 1rem
+                  - rowgroup [ref=e1754]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status--PaddingInlineEnd 1rem" [ref=e1755]:
+                      - gridcell "Details" [ref=e1756]:
+                        - button "Details" [ref=e1757] [cursor=pointer]:
+                          - generic [ref=e1759]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1760]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status--PaddingInlineEnd" [ref=e1761]
+                      - gridcell "1rem" [ref=e1762]:
+                        - generic [ref=e1765]: 1rem
+                  - rowgroup [ref=e1766]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-progress--GridTemplateColumns auto 1fr" [ref=e1767]:
+                      - gridcell [ref=e1768]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1769]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-progress--GridTemplateColumns" [ref=e1770]
+                      - gridcell "auto 1fr" [ref=e1771]:
+                        - generic [ref=e1774]: auto 1fr
+                  - rowgroup [ref=e1775]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-progress--Gap 0.5rem" [ref=e1776]:
+                      - gridcell "Details" [ref=e1777]:
+                        - button "Details" [ref=e1778] [cursor=pointer]:
+                          - generic [ref=e1780]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1781]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-progress--Gap" [ref=e1782]
+                      - gridcell "0.5rem" [ref=e1783]:
+                        - generic [ref=e1786]: 0.5rem
+                  - rowgroup [ref=e1787]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-progress-icon--Color (In light theme) #0066cc" [ref=e1788]':
+                      - gridcell "Details" [ref=e1789]:
+                        - button "Details" [ref=e1790] [cursor=pointer]:
+                          - generic [ref=e1792]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1793]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-progress-icon--Color" [ref=e1794]
+                      - 'gridcell "(In light theme) #0066cc" [ref=e1795]':
+                        - generic [ref=e1800]: "(In light theme) #0066cc"
+                  - rowgroup [ref=e1801]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item--PaddingBlockStart 1rem" [ref=e1802]:
+                      - gridcell "Details" [ref=e1803]:
+                        - button "Details" [ref=e1804] [cursor=pointer]:
+                          - generic [ref=e1806]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1807]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item--PaddingBlockStart" [ref=e1808]
+                      - gridcell "1rem" [ref=e1809]:
+                        - generic [ref=e1812]: 1rem
+                  - rowgroup [ref=e1813]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item--PaddingBlockEnd 1rem" [ref=e1814]:
+                      - gridcell "Details" [ref=e1815]:
+                        - button "Details" [ref=e1816] [cursor=pointer]:
+                          - generic [ref=e1818]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1819]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item--PaddingBlockEnd" [ref=e1820]
+                      - gridcell "1rem" [ref=e1821]:
+                        - generic [ref=e1824]: 1rem
+                  - rowgroup [ref=e1825]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item--GridTemplateColumns auto 1fr auto" [ref=e1826]:
+                      - gridcell [ref=e1827]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1828]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item--GridTemplateColumns" [ref=e1829]
+                      - gridcell "auto 1fr auto" [ref=e1830]:
+                        - generic [ref=e1833]: auto 1fr auto
+                  - rowgroup [ref=e1834]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item--Gap 0.5rem" [ref=e1835]:
+                      - gridcell "Details" [ref=e1836]:
+                        - button "Details" [ref=e1837] [cursor=pointer]:
+                          - generic [ref=e1839]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1840]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item--Gap" [ref=e1841]
+                      - gridcell "0.5rem" [ref=e1842]:
+                        - generic [ref=e1845]: 0.5rem
+                  - rowgroup [ref=e1846]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item--BorderWidth 1px" [ref=e1847]:
+                      - gridcell "Details" [ref=e1848]:
+                        - button "Details" [ref=e1849] [cursor=pointer]:
+                          - generic [ref=e1851]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1852]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item--BorderWidth" [ref=e1853]
+                      - gridcell "1px" [ref=e1854]:
+                        - generic [ref=e1857]: 1px
+                  - rowgroup [ref=e1858]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item--BorderColor (In light theme) #c7c7c7" [ref=e1859]':
+                      - gridcell "Details" [ref=e1860]:
+                        - button "Details" [ref=e1861] [cursor=pointer]:
+                          - generic [ref=e1863]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1864]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item--BorderColor" [ref=e1865]
+                      - 'gridcell "(In light theme) #c7c7c7" [ref=e1866]':
+                        - generic [ref=e1871]: "(In light theme) #c7c7c7"
+                  - rowgroup [ref=e1872]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item-icon--Color (In light theme) #1f1f1f" [ref=e1873]':
+                      - gridcell "Details" [ref=e1874]:
+                        - button "Details" [ref=e1875] [cursor=pointer]:
+                          - generic [ref=e1877]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1878]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item-icon--Color" [ref=e1879]
+                      - 'gridcell "(In light theme) #1f1f1f" [ref=e1880]':
+                        - generic [ref=e1885]: "(In light theme) #1f1f1f"
+                  - rowgroup [ref=e1886]:
+                    - row ".pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item-progress--GridTemplateColumns fit-content(100%) max-content" [ref=e1887]:
+                      - gridcell [ref=e1888]
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1889]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item-progress--GridTemplateColumns" [ref=e1890]
+                      - gridcell "fit-content(100%) max-content" [ref=e1891]:
+                        - generic [ref=e1894]: fit-content(100%) max-content
+                  - rowgroup [ref=e1895]:
+                    - row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item-progress--Gap 0.5rem" [ref=e1896]:
+                      - gridcell "Details" [ref=e1897]:
+                        - button "Details" [ref=e1898] [cursor=pointer]:
+                          - generic [ref=e1900]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1901]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item-progress--Gap" [ref=e1902]
+                      - gridcell "0.5rem" [ref=e1903]:
+                        - generic [ref=e1906]: 0.5rem
+                  - rowgroup [ref=e1907]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item-progress-text--Color (In light theme) #151515" [ref=e1908]':
+                      - gridcell "Details" [ref=e1909]:
+                        - button "Details" [ref=e1910] [cursor=pointer]:
+                          - generic [ref=e1912]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1913]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item-progress-text--Color" [ref=e1914]
+                      - 'gridcell "(In light theme) #151515" [ref=e1915]':
+                        - generic [ref=e1920]: "(In light theme) #151515"
+                  - rowgroup [ref=e1921]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload --pf-v6-c-multiple-file-upload__status-item-progress-size--Color (In light theme) #4d4d4d" [ref=e1922]':
+                      - gridcell "Details" [ref=e1923]:
+                        - button "Details" [ref=e1924] [cursor=pointer]:
+                          - generic [ref=e1926]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload" [ref=e1927]
+                      - gridcell "--pf-v6-c-multiple-file-upload__status-item-progress-size--Color" [ref=e1928]
+                      - 'gridcell "(In light theme) #4d4d4d" [ref=e1929]':
+                        - generic [ref=e1934]: "(In light theme) #4d4d4d"
+                  - rowgroup [ref=e1935]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload--GridTemplateColumns fit-content(100%)" [ref=e1936]:
+                      - gridcell "Details" [ref=e1937]:
+                        - button "Details" [ref=e1938] [cursor=pointer]:
+                          - generic [ref=e1940]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e1941]
+                      - gridcell "--pf-v6-c-multiple-file-upload--GridTemplateColumns" [ref=e1942]
+                      - gridcell "fit-content(100%)" [ref=e1943]:
+                        - generic [ref=e1946]: fit-content(100%)
+                  - rowgroup [ref=e1947]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__main--TextAlign start" [ref=e1948]:
+                      - gridcell "Details" [ref=e1949]:
+                        - button "Details" [ref=e1950] [cursor=pointer]:
+                          - generic [ref=e1952]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e1953]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--TextAlign" [ref=e1954]
+                      - gridcell "start" [ref=e1955]:
+                        - generic [ref=e1958]: start
+                  - rowgroup [ref=e1959]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__main--GridTemplateColumns 1fr auto" [ref=e1960]:
+                      - gridcell "Details" [ref=e1961]:
+                        - button "Details" [ref=e1962] [cursor=pointer]:
+                          - generic [ref=e1964]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e1965]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--GridTemplateColumns" [ref=e1966]
+                      - gridcell "1fr auto" [ref=e1967]:
+                        - generic [ref=e1970]: 1fr auto
+                  - rowgroup [ref=e1971]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__main--GridTemplateAreas \"title upload\" \"info upload\"" [ref=e1972]:
+                      - gridcell "Details" [ref=e1973]:
+                        - button "Details" [ref=e1974] [cursor=pointer]:
+                          - generic [ref=e1976]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e1977]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--GridTemplateAreas" [ref=e1978]
+                      - gridcell "\"title upload\" \"info upload\"" [ref=e1979]:
+                        - generic [ref=e1982]: "\"title upload\" \"info upload\""
+                  - rowgroup [ref=e1983]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__main--Gap 0.5rem 1.5rem" [ref=e1984]:
+                      - gridcell "Details" [ref=e1985]:
+                        - button "Details" [ref=e1986] [cursor=pointer]:
+                          - generic [ref=e1988]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e1989]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--Gap" [ref=e1990]
+                      - gridcell "0.5rem 1.5rem" [ref=e1991]:
+                        - generic [ref=e1994]: 0.5rem 1.5rem
+                  - rowgroup [ref=e1995]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__main--PaddingBlockEnd 1.5rem" [ref=e1996]:
+                      - gridcell "Details" [ref=e1997]:
+                        - button "Details" [ref=e1998] [cursor=pointer]:
+                          - generic [ref=e2000]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2001]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--PaddingBlockEnd" [ref=e2002]
+                      - gridcell "1.5rem" [ref=e2003]:
+                        - generic [ref=e2006]: 1.5rem
+                  - rowgroup [ref=e2007]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title--GridTemplateColumns auto 1fr" [ref=e2008]:
+                      - gridcell "Details" [ref=e2009]:
+                        - button "Details" [ref=e2010] [cursor=pointer]:
+                          - generic [ref=e2012]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2013]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title--GridTemplateColumns" [ref=e2014]
+                      - gridcell "auto 1fr" [ref=e2015]:
+                        - generic [ref=e2018]: auto 1fr
+                  - rowgroup [ref=e2019]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title--Gap 0.5rem" [ref=e2020]:
+                      - gridcell "Details" [ref=e2021]:
+                        - button "Details" [ref=e2022] [cursor=pointer]:
+                          - generic [ref=e2024]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2025]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title--Gap" [ref=e2026]
+                      - gridcell "0.5rem" [ref=e2027]:
+                        - generic [ref=e2030]: 0.5rem
+                  - rowgroup [ref=e2031]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title-icon--FontSize 1rem" [ref=e2032]:
+                      - gridcell "Details" [ref=e2033]:
+                        - button "Details" [ref=e2034] [cursor=pointer]:
+                          - generic [ref=e2036]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2037]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-icon--FontSize" [ref=e2038]
+                      - gridcell "1rem" [ref=e2039]:
+                        - generic [ref=e2042]: 1rem
+                  - rowgroup [ref=e2043]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title-text--FontSize 1rem" [ref=e2044]:
+                      - gridcell "Details" [ref=e2045]:
+                        - button "Details" [ref=e2046] [cursor=pointer]:
+                          - generic [ref=e2048]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2049]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text--FontSize" [ref=e2050]
+                      - gridcell "1rem" [ref=e2051]:
+                        - generic [ref=e2054]: 1rem
+                  - rowgroup [ref=e2055]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title-text-separator--FontFamily \"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif" [ref=e2056]:
+                      - gridcell "Details" [ref=e2057]:
+                        - button "Details" [ref=e2058] [cursor=pointer]:
+                          - generic [ref=e2060]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2061]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--FontFamily" [ref=e2062]
+                      - gridcell "\"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif" [ref=e2063]:
+                        - generic [ref=e2066]: "\"Red Hat Display\", \"RedHatDisplay\", \"Noto Sans Arabic\", \"Noto Sans Hebrew\", \"Noto Sans JP\", \"Noto Sans KR\", \"Noto Sans Malayalam\", \"Noto Sans SC\", \"Noto Sans TC\", \"Noto Sans Thai\", Helvetica, Arial, sans-serif"
+                  - rowgroup [ref=e2067]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title-text-separator--Display inline" [ref=e2068]:
+                      - gridcell "Details" [ref=e2069]:
+                        - button "Details" [ref=e2070] [cursor=pointer]:
+                          - generic [ref=e2072]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2073]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--Display" [ref=e2074]
+                      - gridcell "inline" [ref=e2075]:
+                        - generic [ref=e2078]: inline
+                  - rowgroup [ref=e2079]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title-text-separator--MarginBlockStart 0" [ref=e2080]:
+                      - gridcell "Details" [ref=e2081]:
+                        - button "Details" [ref=e2082] [cursor=pointer]:
+                          - generic [ref=e2084]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2085]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--MarginBlockStart" [ref=e2086]
+                      - gridcell "0" [ref=e2087]:
+                        - generic [ref=e2090]: "0"
+                  - rowgroup [ref=e2091]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title-text-separator--FontSize 1rem" [ref=e2092]:
+                      - gridcell "Details" [ref=e2093]:
+                        - button "Details" [ref=e2094] [cursor=pointer]:
+                          - generic [ref=e2096]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2097]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--FontSize" [ref=e2098]
+                      - gridcell "1rem" [ref=e2099]:
+                        - generic [ref=e2102]: 1rem
+                  - rowgroup [ref=e2103]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__title-text-separator--FontWeight 500" [ref=e2104]:
+                      - gridcell "Details" [ref=e2105]:
+                        - button "Details" [ref=e2106] [cursor=pointer]:
+                          - generic [ref=e2108]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2109]
+                      - gridcell "--pf-v6-c-multiple-file-upload__title-text-separator--FontWeight" [ref=e2110]
+                      - gridcell "500" [ref=e2111]:
+                        - generic [ref=e2114]: "500"
+                  - rowgroup [ref=e2115]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-horizontal --pf-v6-c-multiple-file-upload__info--MarginBlockStart 0" [ref=e2116]:
+                      - gridcell "Details" [ref=e2117]:
+                        - button "Details" [ref=e2118] [cursor=pointer]:
+                          - generic [ref=e2120]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-horizontal" [ref=e2121]
+                      - gridcell "--pf-v6-c-multiple-file-upload__info--MarginBlockStart" [ref=e2122]
+                      - gridcell "0" [ref=e2123]:
+                        - generic [ref=e2126]: "0"
+                  - rowgroup [ref=e2127]:
+                    - row "Details .pf-v6-c-multiple-file-upload.pf-m-drag-over --pf-v6-c-multiple-file-upload__main--BorderStyle dashed" [ref=e2128]:
+                      - gridcell "Details" [ref=e2129]:
+                        - button "Details" [ref=e2130] [cursor=pointer]:
+                          - generic [ref=e2132]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-drag-over" [ref=e2133]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--BorderStyle" [ref=e2134]
+                      - gridcell "dashed" [ref=e2135]:
+                        - generic [ref=e2138]: dashed
+                  - rowgroup [ref=e2139]:
+                    - 'row "Details .pf-v6-c-multiple-file-upload.pf-m-drag-over --pf-v6-c-multiple-file-upload__main--BorderColor (In light theme) #0066cc" [ref=e2140]':
+                      - gridcell "Details" [ref=e2141]:
+                        - button "Details" [ref=e2142] [cursor=pointer]:
+                          - generic [ref=e2144]:
+                            - img
+                      - gridcell ".pf-v6-c-multiple-file-upload.pf-m-drag-over" [ref=e2145]
+                      - gridcell "--pf-v6-c-multiple-file-upload__main--BorderColor" [ref=e2146]
+                      - 'gridcell "(In light theme) #0066cc" [ref=e2147]':
+                        - generic [ref=e2152]: "(In light theme) #0066cc"
+              - link "Edit this page on GitHub" [ref=e2154] [cursor=pointer]:
+                - /url: https://github.com/patternfly/patternfly-react/blob/main/packages/react-core/src/components/MultipleFileUpload/examples/MultipleFileUpload.md
+          - button "Back to top" [ref=e2156] [cursor=pointer]:
+            - generic [ref=e2157]: Back to top
+            - img [ref=e2159]
+          - button "Give feedback" [ref=e2162] [cursor=pointer]:
+            - generic [ref=e2163]: Give feedback
+      - contentinfo [ref=e2164]:
+        - generic [ref=e2166]:
+          - generic [ref=e2168]:
+            - generic [ref=e2169]:
+              - paragraph [ref=e2170]: What's new
+              - navigation "Quick Links" [ref=e2171]:
+                - list [ref=e2172]:
+                  - listitem [ref=e2173]:
+                    - link "Latest PatternFly upgrade guide" [ref=e2175] [cursor=pointer]:
+                      - /url: /get-started/upgrade
+                      - text: Upgrade
+                  - listitem [ref=e2176]:
+                    - link "PatternFly release highlights" [ref=e2178] [cursor=pointer]:
+                      - /url: /get-started/release-highlights/
+                      - text: Releases
+                  - listitem [ref=e2179]:
+                    - link "PatternFly's new AI resources" [ref=e2181] [cursor=pointer]:
+                      - /url: /patternfly-ai/about-ai
+                      - text: PatternFly AI
+                  - listitem [ref=e2182]:
+                    - link "PatternFly's new token system" [ref=e2184] [cursor=pointer]:
+                      - /url: /tokens/about-tokens
+                      - text: Tokens
+            - generic [ref=e2185]:
+              - paragraph [ref=e2186]: Contribute
+              - navigation "Contribute" [ref=e2187]:
+                - list [ref=e2188]:
+                  - listitem [ref=e2189]:
+                    - link "Learn about PatternFly" [ref=e2191] [cursor=pointer]:
+                      - /url: /get-started/about-patternfly
+                      - text: About PatternFly
+                  - listitem [ref=e2192]:
+                    - link "Our code of conduct for contributions" [ref=e2194] [cursor=pointer]:
+                      - /url: https://github.com/patternfly/patternfly/blob/main/CODE_OF_CONDUCT.md
+                      - text: Code of conduct
+                  - listitem [ref=e2195]:
+                    - link "Learn how to contribute to PatternFly" [ref=e2197] [cursor=pointer]:
+                      - /url: /get-started/contribute
+                      - text: Contribute
+            - generic [ref=e2198]:
+              - paragraph [ref=e2199]: Community
+              - navigation "Stay in touch" [ref=e2200]:
+                - list [ref=e2201]:
+                  - listitem [ref=e2202]:
+                    - link "Join the PatternFly Slack" [ref=e2204] [cursor=pointer]:
+                      - /url: //join.slack.com/t/patternfly/shared_invite/zt-1npmqswgk-bF2R1E2rglV8jz5DNTezMQ
+                      - text: Slack
+                  - listitem [ref=e2205]:
+                    - link "Read the PatternFly blog" [ref=e2207] [cursor=pointer]:
+                      - /url: //medium.com/patternfly
+                      - text: Blog
+                  - listitem [ref=e2208]:
+                    - link "Join the PatternFly mailing list" [ref=e2210] [cursor=pointer]:
+                      - /url: https://www.redhat.com/dynamic-form/instance/934b1674-bc8a-4a13-8c9d-d19abcceb263
+                      - text: Mailing list
+                  - listitem [ref=e2211]:
+                    - link "Join PatternFly meetings" [ref=e2213] [cursor=pointer]:
+                      - /url: https://calendar.google.com/calendar/embed?src=patternflyteam%40gmail.com&ctz=America%2FNew_York
+                      - text: Calendar
+                  - listitem [ref=e2214]:
+                    - link "Visit the PatternFly discussion forum" [ref=e2216] [cursor=pointer]:
+                      - /url: //github.com/orgs/patternfly/discussions
+                      - text: Discussions
+          - generic [ref=e2218]:
+            - generic [ref=e2219]:
+              - link "PatternFly" [ref=e2220] [cursor=pointer]:
+                - /url: /
+                - img "PatternFly" [ref=e2221]
+              - paragraph [ref=e2238]: PatternFly is an open source design system built to drive consistency and unify teams. From documentation and components to code examples and tutorials, PatternFly is a place where design and development can thrive. We’re on a mission to help teams build consistent, accessible, and scalable enterprise product experiences—the open source way.
+            - generic [ref=e2239]:
+              - link "Link to PatternFly GitHub page" [ref=e2240] [cursor=pointer]:
+                - /url: //github.com/patternfly
+                - img [ref=e2241]
+              - link "Link to PatternFly X page" [ref=e2243] [cursor=pointer]:
+                - /url: //x.com/patternfly
+                - img [ref=e2244]
+      - generic [ref=e2248]:
+        - link "Red Hat" [ref=e2250] [cursor=pointer]:
+          - /url: //www.redhat.com
+          - img "Red Hat" [ref=e2251]
+        - generic [ref=e2253]: Copyright © 2014-2026 Red Hat, Inc.
+        - generic [ref=e2254]:
+          - link "Privacy statement" [ref=e2255] [cursor=pointer]:
+            - /url: //www.redhat.com/en/about/privacy-policy
+          - link "Terms of use" [ref=e2256] [cursor=pointer]:
+            - /url: //www.redhat.com/en/about/terms-use
+          - link "All policies and guidelines" [ref=e2257] [cursor=pointer]:
+            - /url: //www.redhat.com/en/about/all-policies-guidelines
+  - generic [ref=e2262]:
+    - generic [ref=e2263]:
+      - text: We use cookies on our websites to deliver our online services. Details about how we use cookies and how you may disable them are set out in our
+      - link "Privacy Statement" [ref=e2264] [cursor=pointer]:
+        - /url: //www.redhat.com/en/about/privacy-policy
+      - text: . By using this website you agree to our use of cookies.
+    - button "Close banner" [ref=e2266] [cursor=pointer]:
+      - img [ref=e2268]
+```
+
+# Test source
+
+```ts
+  1  | import { test, expect, Locator } from '@playwright/test';
+  2  | import path from 'path';
+  3  | 
+  4  | const URL = 'https://www.patternfly.org/components/file-upload/multiple-file-upload/'; // replace with target page
+  5  | 
+  6  | test.describe('FileUpload handling', () => {
+  7  | 
+  8  |     test.beforeEach(async ({ page }) => {
+  9  |         await page.goto(URL);
+  10 |     });
+  11 | 
+  12 |     test('locate FileUpload and upload', async ({ page }) => {
+  13 | 
+  14 | 
+  15 |         await page.locator("div.pf-v6-c-multiple-file-upload input").setInputFiles(
+  16 |             [{
+  17 |                 name: 'file1.jpg',
+  18 |                 mimeType: 'image/jpeg',
+  19 |                 buffer: Buffer.from('image from thetestingacademy code')
+  20 |             },
+  21 |             {
+  22 |                 name: 'file2.jpg',
+  23 |                 mimeType: 'image/jpeg',
+  24 |                 buffer: Buffer.from('this is test')
+  25 |             }
+  26 | 
+  27 |             ]);
+  28 | 
+> 29 |         await page.locator(".pf-v6-c-button pf-m-secondary").click();
+     |                                                              ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  30 | 
+  31 | 
+  32 | 
+  33 | 
+  34 | 
+  35 | 
+  36 | 
+  37 | 
+  38 |         await page.waitForTimeout(15000);
+  39 | 
+  40 | 
+  41 | 
+  42 | 
+  43 | 
+  44 | 
+  45 | 
+  46 | 
+  47 |     });
+  48 | 
+  49 | 
+  50 | 
+  51 | });
+  52 | 
+```

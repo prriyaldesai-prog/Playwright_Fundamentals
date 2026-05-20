@@ -32,6 +32,11 @@
    - [05 — Allure Reporting](#05--allure-reporting)
    - [06 — Multiple Elements](#06--multiple-elements)
    - [07 — Web Tables](#07--web-tables)
+   - [08 — Select / Dropdowns / Frames](#08--select--dropdowns--frames)
+   - [09 — Frames & Iframes](#09--frames--iframes)
+   - [10 — Keyboard, Hover, Drag & Drop, Right Click](#10--keyboard-hover-drag--drop-right-click)
+   - [11 — JS Alerts / Confirms / Prompts](#11--js-alerts--confirms--prompts)
+   - [12 — Handling SVG Elements](#12--handling-svg-elements)
    - [Projects — TTA Bank E2E](#projects--tta-bank-e2e)
 7. [Locator Strategy Cheat Sheet](#-locator-strategy-cheat-sheet)
 8. [Wait Strategies (`waitUntil`)](#-wait-strategies-waituntil)
@@ -55,8 +60,13 @@ flowchart LR
     B --> C[🎯 Locators & Navigation<br/>Labs 219–227]
     C --> D[🔐 Session Reuse<br/>Labs 228–229]
     D --> E[📊 Reporting<br/>Lab 230]
-    E --> F[📑 Multi-element / Tables<br/>Labs 231–233]
-    F --> G[🏦 Real Project<br/>TTA Bank]
+    E --> F[📑 Multi-element / Tables<br/>Labs 231–234]
+    F --> H[🎚 Selects / Dropdowns / Frames<br/>Labs 234–238]
+    H --> I[🪟 Iframes<br/>Labs 239–241]
+    I --> J[⌨️ Keyboard / Hover / DnD<br/>Labs 242, 244–247]
+    J --> K[🔔 JS Alerts<br/>Lab 243]
+    K --> L[🖼 SVG Elements<br/>Labs 248–250]
+    L --> G[🏦 Real Project<br/>TTA Bank]
 
     style A fill:#fef3c7,stroke:#f59e0b,color:#000
     style G fill:#d1fae5,stroke:#10b981,color:#000
@@ -74,8 +84,13 @@ flowchart LR
 | 4 | `04_Session_Storage` | 228–229 | `storageState` — login once, reuse session forever |
 | 5 | `05_Allure_Reporting` | 230 | Allure annotations: epic → feature → story |
 | 6 | `06_Multiple_Element_` | 231 | `allInnerTexts`, iterating collections |
-| 7 | `07_WebTables` | 232–233 | Static + dynamic HTML table extraction |
-| 8 | `Projects/Project_4_TTA_BANK` | Task1 | Full E2E flow: signup → transfer → verify balance |
+| 7 | `07_WebTables` | 232–234 | Static + dynamic HTML table extraction, employee management |
+| 8 | `08_Web_Select_Frames_Iframe` | 234–238 | Native + custom + React-Select dropdowns, async/grouped/creatable |
+| 9 | `09_Frame_Iframe` | 239–241 | `frameLocator`, multi-frame pages, nested iframe-in-iframe |
+| 10 | `10_Keyboard_Hover_Drag_Drop` | 242, 244–247 | `page.keyboard`, hover menus, `dragTo` + manual mouse DnD, right-click context menus |
+| 11 | `11_JS_Alerts` | 243 | `page.on('dialog')` — alert / confirm / prompt accept + dismiss |
+| 12 | `12_Handle_SVG` | 248–250 | SVG namespace — click shapes, iterate `.bar` nodes, read attributes |
+| 13 | `Projects/Project_4_TTA_BANK` | Task1 | Full E2E flow: signup → transfer → verify balance |
 
 ---
 
@@ -209,7 +224,36 @@ LearningPlaywrightFundamentals/
 │   │
 │   ├── 07_WebTables/                           # 🗂 HTML tables
 │   │   ├── 232_WebTable_Basic.spec.ts          # Static, XPath + Native
-│   │   └── 233_WebTable_Dyanamic.spec.ts       # Dynamic structured extraction
+│   │   ├── 233_WebTable_Dyanamic.spec.ts       # Dynamic structured extraction
+│   │   └── 234_WebTABLE_Employe_Management.spec.ts  # 🚧 Employee mgmt scaffold
+│   │
+│   ├── 08_Web_Select_Frames_Iframe/            # 🎚 Dropdowns / selects / frames
+│   │   ├── 234_Web.spec.ts                     # Sibling-axis + :has() row locators
+│   │   ├── 235_Select_FramesWeb.spec.ts        # Native <select> via selectOption
+│   │   ├── 236_Advacne_Select_Frames2.spec.ts  # Custom div-based dropdowns
+│   │   ├── 237_Advacne_Select_Pro.spec.ts      # React-Select: single/multi/creatable/async
+│   │   ├── 238_Advance_Select_Pro_v2.spec.ts   # React-Select pro: remove tag / grouped / async
+│   │   └── util.ts                             # selectValue() helper
+│   │
+│   ├── 09_Frame_Iframe/                        # 🪟 frameLocator API
+│   │   ├── 239_Iframe.spec.ts                  # Single iframe — form fill inside frame
+│   │   ├── 240_Multiple_frame.spec.ts          # Multi-frame page (frameset) traversal
+│   │   └── 241_Iframe_within_Iframe.spec.ts    # Nested frames — pact1 → pact2 → pact3
+│   │
+│   ├── 10_Keyboard_Hover_Drag_Drop/            # ⌨️ Low-level input APIs
+│   │   ├── 242_keyboard.spec.ts                # keyboard.press / down / up + screenshots
+│   │   ├── 244_Spicejet_Hover.spec.ts          # hover() to reveal submenu
+│   │   ├── 245_Drag_Drop.spec.ts               # dragTo() — the-internet demo
+│   │   ├── 246_Drag_Drop_advance_Kanban.spec.ts # Manual mouse.move/down/up for finicky DnD libs
+│   │   └── 247_RightClick.spec.ts              # click({ button: 'right' }) + context menu
+│   │
+│   ├── 11_JS_Alerts/                           # 🔔 Native browser dialogs
+│   │   └── 243_JS_Alerts.spec.ts               # alert / confirm / prompt — accept + dismiss
+│   │
+│   ├── 12_Handle_SVG/                          # 🖼 SVG namespace shapes
+│   │   ├── 248_SVG_Project.spec.ts             # Flipkart — click SVG search icon, read results
+│   │   ├── 249_SVG_Practice.spec.ts            # TTA widget — click circle / bar / radio shapes
+│   │   └── 250_Advance_SVG_pROJECT.spec.ts     # 🚧 Advanced SVG scaffold
 │   │
 │   └── Projects/
 │       └── Project_4_TTA_BANK/
@@ -488,6 +532,215 @@ flowchart LR
     D --> E[Read cell with<br/>td:nth&#40;n&#41;.innerText]
     E --> F[Assert / collect data]
 ```
+
+> Lab **234** (`234_WebTABLE_Employe_Management.spec.ts`) is a placeholder for the upcoming **Employee Management** end-to-end exercise — covering CRUD over a dynamic table with row filtering and inline edits.
+
+---
+
+### 08 — Select / Dropdowns / Frames
+
+Real-world apps rarely use plain `<select>`. This module walks through **three flavours of "dropdown"** and shows the right Playwright pattern for each.
+
+```mermaid
+flowchart TD
+    Q{Dropdown type?} -->|Native &lt;select&gt;| N[selectOption&#40;value&#41;]
+    Q -->|Custom div + onclick<br/>e.g. TTA app| C[click trigger →<br/>getByText option]
+    Q -->|React-Select / Headless UI| R[click → search →<br/>getByRole&#40;'option'&#41;]
+
+    style N fill:#d1fae5,stroke:#10b981,color:#000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000
+    style R fill:#dbeafe,stroke:#3b82f6,color:#000
+```
+
+| Lab | File | Demonstrates |
+|:---:|:-----|:-------------|
+| 234 | `234_Web.spec.ts` | XPath sibling-axis (`preceding-sibling::td/input`) + `tr:has(td:text('...'))` row filter |
+| 235 | `235_Select_FramesWeb.spec.ts` | Native `<select>` via `page.selectOption()` on `the-internet.herokuapp.com` |
+| 236 | `236_Advacne_Select_Frames2.spec.ts` | Custom **div-based** dropdowns — click trigger then `getByText({ exact: true })` |
+| 237 | `237_Advacne_Select_Pro.spec.ts` | **React-Select**: single, multi (with `Escape`), creatable tags, async typeahead |
+| 238 | `238_Advance_Select_Pro_v2.spec.ts` | React-Select **pro**: remove a chosen tag, pick from a *grouped* section, search-then-pick async |
+| — | `util.ts` | Reusable `selectValue(page, label, value)` helper for label-driven dropdowns |
+
+#### React-Select Pattern (Lab 237 / 238)
+
+```ts
+// Single, searchable
+await page.getByTestId('rs-single').click();
+await page.getByTestId('rs-single-input').fill('play');
+await page.getByRole('option', { name: 'Playwright' }).click();
+
+// Multi — pick three
+for (const name of ['Playwright', 'Pytest', 'TestNG']) {
+    await page.getByTestId('rs-multi').click();
+    await page.getByRole('option', { name }).click();
+}
+
+// Async — wait for results to come back from the server
+await page.getByTestId('rs-async-input').fill('pun');
+await expect(page.getByTestId('rs-async-menu')).toContainText('Pune');
+await page.getByRole('option', { name: 'Pune' }).click();
+```
+
+#### When to Use Which Dropdown API
+
+| Widget | Detect | Use |
+|:-------|:-------|:----|
+| `<select>` | Inspect → `<select>` tag | `page.selectOption(selector, value)` |
+| Custom CSS dropdown | Click reveals `<div role="listbox">` | `click trigger` → `getByText(option, { exact: true })` |
+| React-Select / Combobox | `role="combobox"` + `role="option"` | `click` → `fill` → `getByRole('option', { name })` |
+
+---
+
+### 09 — Frames & Iframes
+
+`frameLocator` is Playwright's window into `<iframe>` content. Treat it like a mini-page — chain `.locator()` calls from it.
+
+```mermaid
+flowchart LR
+    P[page] --> F1[frameLocator '#pact1']
+    F1 --> F2[frameLocator '#pact2']
+    F2 --> F3[frameLocator '#pact3']
+    F3 --> E[locator '#glaf'.fill]
+
+    style P fill:#1e3a8a,stroke:#1e40af,color:#fff
+    style E fill:#d1fae5,stroke:#10b981,color:#000
+```
+
+| Lab | File | Demonstrates |
+|:---:|:-----|:-------------|
+| 239 | `239_Iframe.spec.ts` | Single iframe — fill vehicle-registration form inside `#frame-one` |
+| 240 | `240_Multiple_frame.spec.ts` | Frameset page — enumerate `<frame>` elements, drive `main` + `side` independently |
+| 241 | `241_Iframe_within_Iframe.spec.ts` | Nested iframes — `frame1.frameLocator(frame2).frameLocator(frame3)` |
+
+```ts
+const carFrame = page.frameLocator('#frame-one');
+await carFrame.locator('#RESULT_TextField-1').fill('Hyundai i10');
+await carFrame.getByText('Submit registration', { exact: true }).click();
+```
+
+---
+
+### 10 — Keyboard, Hover, Drag & Drop, Right Click
+
+Low-level input APIs for things `click()` and `fill()` cannot express.
+
+| Lab | API | Scenario |
+|:---:|:----|:---------|
+| 242 | `page.keyboard.press / down / up` | Type single keys, modifiers (`Shift+O`), arrow keys |
+| 244 | `locator.hover()` | Reveal hidden submenus (SpiceJet Add-ons, TTA hover-menu widget) |
+| 245 | `source.dragTo(target)` | Classic `the-internet.herokuapp.com/drag_and_drop` swap |
+| 246 | `mouse.move / down / up` | Kanban DnD — manual mouse path with `steps: 10` for libs that ignore `dragTo` |
+| 247 | `click({ button: 'right' })` | Trigger context menu, read all options, pick `Copy` |
+
+```ts
+// Lab 246 — manual mouse path for libraries that swallow dragTo()
+const sBox = (await source.boundingBox())!;
+const tBox = (await target.boundingBox())!;
+await page.mouse.move(sBox.x + sBox.width / 2, sBox.y + sBox.height / 2);
+await page.mouse.down();
+await page.mouse.move(tBox.x + tBox.width / 2, tBox.y + tBox.height / 2, { steps: 10 });
+await page.mouse.up();
+```
+
+```mermaid
+flowchart TD
+    Q{DnD library cooperative?} -->|Yes| A[source.dragTo&#40;target&#41;]
+    Q -->|No — React DnD / HTML5| B[mouse.move → down → move steps → up]
+
+    style A fill:#d1fae5,stroke:#10b981,color:#000
+    style B fill:#fef3c7,stroke:#f59e0b,color:#000
+```
+
+---
+
+### 11 — JS Alerts / Confirms / Prompts
+
+Native browser dialogs **block the page** — you cannot click them with a locator. Register a one-shot `dialog` handler **before** the action that triggers it.
+
+```mermaid
+sequenceDiagram
+    participant T as Test
+    participant P as Page
+    participant D as Dialog
+
+    T->>P: page.once('dialog', handler)
+    Note over T,P: Handler registered — does NOT trigger anything yet
+    T->>P: button.click()
+    P->>D: window.alert / confirm / prompt fires
+    D-->>P: dialog event
+    P->>T: handler invoked
+    T->>D: dialog.accept() / dismiss() / accept(promptText)
+    D-->>P: dialog closed
+    P->>T: action resumes
+```
+
+```ts
+test('JS Confirm accept', async ({ page }) => {
+    page.once('dialog', async dialog => {
+        expect(dialog.type()).toBe('confirm');
+        expect(dialog.message()).toBe('I am a JS Confirm');
+        await dialog.accept();   // or dialog.dismiss()
+    });
+    await page.locator('button', { hasText: 'Click for JS Confirm' }).click();
+    await expect(page.locator('#result')).toHaveText('You clicked: Ok');
+});
+```
+
+| Dialog Type | API | Notes |
+|:------------|:----|:------|
+| `alert` | `dialog.accept()` | No return value |
+| `confirm` | `accept()` / `dismiss()` | Maps to `Ok` / `Cancel` |
+| `prompt` | `accept('text')` / `dismiss()` | Pass text into `accept` |
+
+> ⚠️ Use `page.once` not `page.on` — otherwise the handler stays alive across tests and swallows future dialogs.
+
+---
+
+### 12 — Handling SVG Elements
+
+SVG nodes live in their own namespace — but Playwright treats them like any DOM node. CSS selectors and `getByRole` work out of the box. XPath needs `name()` / `local-name()` because tags are namespaced (`svg:path`).
+
+```mermaid
+flowchart LR
+    A[svg root] --> B[child shapes]
+    B --> C1[circle]
+    B --> C2[rect / bar]
+    B --> C3[path]
+    C1 --> D[click / hover / read attrs]
+    C2 --> D
+    C3 --> D
+    D --> E[assert state / output text]
+
+    style A fill:#1e3a8a,stroke:#1e40af,color:#fff
+    style E fill:#d1fae5,stroke:#10b981,color:#000
+```
+
+| Lab | File | Demonstrates |
+|:---:|:-----|:-------------|
+| 248 | `248_SVG_Project.spec.ts` | Real-world — click Flipkart's SVG search icon, scrape product titles via XPath |
+| 249 | `249_SVG_Practice.spec.ts` | TTA widget — click `#circle-blue`, iterate `.bar` nodes, read `data-quarter` |
+| 250 | `250_Advance_SVG_pROJECT.spec.ts` | 🚧 Scaffold for advanced SVG scenarios |
+
+```ts
+// Click an SVG shape by id, then iterate all bars
+const circle = page.locator('#circle-blue');
+await circle.click();
+expect(await page.locator('#shapes-output').innerText()).toContain('Blue circle');
+
+const bars = await page.locator('.bar').all();
+for (const bar of bars) {
+    const quarter = await bar.getAttribute('data-quarter');
+    await bar.click();
+    console.log(quarter);
+}
+```
+
+| Selector Style | SVG-safe? | Example |
+|:---------------|:---------:|:--------|
+| CSS `#id` / `.class` | ✅ | `page.locator('#circle-blue')` |
+| `getByRole` | ✅ (if `role` attr present) | `page.getByRole('button', { name: /Q3 bar/ })` |
+| `[data-*]` attr | ✅ | `page.locator('[data-quarter="Q3"]')` |
+| XPath plain tag | ❌ | `//path` may not match — use `//*[name()='path']` |
 
 ---
 
