@@ -53,7 +53,7 @@ test.describe('DDT Simple', () => {
             await textboxPassword.fill(data.password);
             await buttonLoginToPracticeAccount.click();
 
-            // await expect(page).toHaveURL(data.expectedURL);
+            await expect(page).toHaveURL(data.expectedURL);
 
 
 

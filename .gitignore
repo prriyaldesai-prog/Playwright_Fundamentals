@@ -6,3 +6,16 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# Allure & Custom Reports
+allure-results/
+allure-report/
+tta-report/
+
+# Secrets / Environment variables
+.env
+*.env
+**/.env
+
+# Local agent artifacts / Playwright MCP files
+.playwright-mcp/

@@ -4,6 +4,7 @@ import { readCSV } from './csvReader_useSame';
 
 const URL = "https://app.thetestingacademy.com/playwright/tables/practice.html";
 
+//Function added for date format acceptance
 // Helper to normalize various CSV date formats (DD/MM/YYYY, DD-MM-YYYY, DDMMYYYY) to YYYY-MM-DD
 function formatToISO(dateStr: string): string {
     if (/^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
